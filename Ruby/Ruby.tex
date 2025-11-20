@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+
+% Layout
+\usepackage[top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Language & encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+% Math
+\usepackage{amsmath,amssymb}
+
+% Graphics
+\usepackage{graphicx}
+
+% Chemistry (only for real chemical formulas)
+\usepackage[version=4]{mhchem}
+\usepackage{electrons}
+
+% Units
+\usepackage{siunitx}
+
+% Links
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+
+% Bibliography
+\usepackage[backend=biber,style=authoryear,citestyle=authoryear]{biblatex}
+\addbibresource{Source.bib}
+
+\title{Ba11 -- Optische Messungen am Isolatorkristall}
+\author{Alexander Ilyin, Loïs Coquart, Sophie Schmitz}
+\date{12. November 2025} 
+
+\begin{document}
+
+\maketitle
+
+\section{Physikalische Grundlagen}
+
+\subsection{Energieniveaus im Rubinkristall}
+
+Wir betrachten einen Rubinkristall aus Korund (\ce{Al2O3}), der mit \ce{Cr^{3+}}-Ionen verunreinigt wurde. Um eine solche Struktur zu beschreiben, benutzen wir die Ligandenfeldtheorie, die die Raumsymmetrien des Kristalls ausnutzt, um Aussagen über die d-Orbitale des \ce{Cr^{3+}}-Ions zu treffen. In einem oktaedrischen Kristall wird ein einzelner Elektronenzustand mit fünf Entartungen in zwei verschiedene Energiezustände aufgespalten. Da wir hier allerdings mehrere Elektronen betrachten und ein schwächeres Kristallfeld, wird in der schwachen-Feld-Näherung die Spin-Bahn-Kopplung der Elektronen in drei verschiedene Terme aufgespalten, $^4A_2$, $^4T_2$ und $^4T_1$ \parencite{Anleitung,Riedel}.
+
+\subsection{Optische Übergänge im Rubin}
+
+Das \ce{Cr^{3+}}-Ion hat eine \ce{[Ar] 3d^3}-Elektronenkonfiguration. Im oktaedrischen Kristallfeld von \ce{Al2O3} sind die \ce{Cr^{3+}}-Ionen von sechs \ce{O^{2-}}-Liganden umgeben. Die negativen Liganden erzeugen ein elektrostatisches Feld, das die Energieniveaus der d-Orbitale unterschiedlich stark anhebt, abhängig davon, wie stark die Orbitale auf die Liganden zeigen; dadurch hebt sich die Entartung der fünf Orbitale auf.
+
+Von den fünf d-Orbitalen liegen $d_{xy}$, $d_{xz}$ und $d_{yz}$ örtlich weiter von den Liganden entfernt und bilden dadurch die energetisch günstigere Gruppe $t_{2g}$. Die $d_{x^2-y^2}$ und $d_{z^2}$ zeigen stärker in Richtung der Liganden und bilden die energetisch höhere Gruppe $e_g$. Insgesamt verändert sich die Gesamtenergie nicht, aber die fünf d-Orbitale spalten sich in $3\times t_{2g}$ und $2\times e_g$ auf.
+
+Da \ce{Cr^{3+}} drei d-Elektronen besitzt, werden diese gemäß der Hundschen Regel zunächst die energetisch tiefer liegenden $t_{2g}$ besetzen:
+\[
+\subshell{4d:11100} \xrightarrow{} \subshell{$e_g$:00} \quad \subshell{$t_{2g}$:111}
+\]
+Dies ist der Grundzustand ($^4A_2$). Die angeregten Zustände entsprechen den $^4T_2$- und $^4T_1$-Termen und sind nicht entartet. Optische Übergänge zwischen diesen Termen liefern die charakteristischen U- und Y-Bänder.
+
+Die Energiedifferenz zwischen den Gruppen beträgt $\Delta=10\,Dq$. Die Größe $Dq$ ist durch die Stärke des Kristallfeldes bestimmt. In einem optischen Übergang kann ein Elektron aus $t_{2g}$ in $e_g$ angeregt werden, was die charakteristische Absorptionsfarbe des Rubins erklärt \parencite{Libre,Anleitung,Riedel}.
+
+\subsection{Tanabe-Sugano-Diagramme}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Tanabe_Sugano_Diagram_d3.pdf}
+    \caption{Tanabe-Sugano-Diagramm für $d^3$ nach \cite{Tanabe}.}
+    \label{fig:TSD}
+\end{figure}
+
+Ein Tanabe-Sugano-Diagramm (Abb.~\ref{fig:TSD}) ist ein Termdiagramm, das die Energien der Multipletterme in Abhängigkeit der Kristallfeldstärke $\Delta$ bzw.\ $Dq$ darstellt. Üblich ist die Normierung mit dem Racah-Parameter $B$, der die Elektron–Elektron-Wechselwirkung beschreibt. Dadurch sind Tanabe-Sugano-Diagramme für eine gegebene Elektronenkonfiguration universell. Aus gemessenen Übergangsenergien kann man durch Abgleich der Verhältnisse $\Delta E$ die Größe $\Delta/B$ (und damit $Dq/B$) des betrachteten Kristalls bestimmen \parencite{Anleitung,Riedel,Orton}.
+
+\section{Versuchsaufbau}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Aufbau.pdf}
+    \caption{Versuchsaufbau (nach \textcite{Anleitung}) zur Messung eines Absorptionsspektrums mit Zweistrahl-Anordnung, Chopper und Lock-In.}
+    \label{fig:Aufbau}
+\end{figure}
+
+\newpage
+
+\section{Versuchsdurchführung}
+
+Als erstes wird das Zweistrahl-Absorptionsspektrometer wie in der Anleitung aufgebaut. Die Xenon-Hochdrucklampe dient als Lichtquelle und wird mit Linsen aufgeteilt, sodass ein Strahl durch den Rubinkristall (Strahlengang~1) und der andere durch eine Lochblende als Referenz geführt wird. Vor dem Monochromator werden beide Strahlen wieder vereinigt und über einen Chopper abwechselnd unterbrochen, damit sie nicht gleichzeitig gemessen werden. Das modulierte Signal wird anschließend mit einem Lock-In-Verstärker synchron zum Chopper aufgenommen.
+
+Zuerst wird bei \SI{700}{\nano\meter}, wo der Rubin kaum absorbiert, die Intensität beider Strahlengänge mit den Blenden IB1 und IB2 gleich eingestellt. Danach wird im Bereich von \SIrange{350}{720}{\nano\meter} eine Messung des Differenzsignals $I_{\text{Probe}}-I_{\text{Referenz}}$ durchgeführt. Die Spannungswerte werden über den A/D-Wandler aus dem Lock-In-Verstärker ausgelesen und über das LabVIEW-Programm automatisch aufgezeichnet.
+
+Zur Kontrolle der Lichtquelle wird zusätzlich das Intensitätsspektrum der Xenonlampe aufgenommen. Anschließend wird das Intensitätsspektrum des Rubins allein gemessen, wobei die Phase des Lock-In-Verstärkers um \SI{180}{\degree} verstellt werden muss. Für den Bereich von \SIrange{670}{720}{\nano\meter} wird die Empfindlichkeit des Lock-In-Verstärkers erhöht, um schwache Linien deutlicher sichtbar zu machen.
+
+Zur Bestimmung der Basislinie wird der Rubin durch eine Lochblende ersetzt und die Strahlengänge erneut bei \SI{700}{\nano\meter} abgeglichen. Abschließend wird zur Wellenlängenkalibrierung eine Quecksilber-Niederdrucklampe eingesetzt; der Monochromator wird manuell auf die \SI{507.4}{\nano\meter}-Linie eingestellt und das Maximum am Oszilloskop gesucht \parencite{Anleitung}.
+
+\printbibliography 
+
+
+\end{document}
