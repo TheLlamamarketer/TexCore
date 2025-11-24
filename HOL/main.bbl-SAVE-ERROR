@@ -1,0 +1,264 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Gabor}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=26685af3bff6a1a18224ce10c6e5a407}{%
+           family={Gabor},
+           familyi={G\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26685af3bff6a1a18224ce10c6e5a407}
+      \strng{fullhash}{26685af3bff6a1a18224ce10c6e5a407}
+      \strng{bibnamehash}{26685af3bff6a1a18224ce10c6e5a407}
+      \strng{authorbibnamehash}{26685af3bff6a1a18224ce10c6e5a407}
+      \strng{authornamehash}{26685af3bff6a1a18224ce10c6e5a407}
+      \strng{authorfullhash}{26685af3bff6a1a18224ce10c6e5a407}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Nobel Lecture}
+      \field{title}{HOLOGRAPHY, 1948-1971}
+      \field{year}{1971}
+      \verb{urlraw}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:ba8_gabor_nobel_lecture.pdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:ba8_gabor_nobel_lecture.pdf
+      \endverb
+    \endentry
+    \entry{Hariharan}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16a01ab101c02aea762acea73ce90940}{%
+           family={Hariharan},
+           familyi={H\bibinitperiod},
+           given={Parameswaran},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{16a01ab101c02aea762acea73ce90940}
+      \strng{fullhash}{16a01ab101c02aea762acea73ce90940}
+      \strng{bibnamehash}{16a01ab101c02aea762acea73ce90940}
+      \strng{authorbibnamehash}{16a01ab101c02aea762acea73ce90940}
+      \strng{authornamehash}{16a01ab101c02aea762acea73ce90940}
+      \strng{authorfullhash}{16a01ab101c02aea762acea73ce90940}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optical Holography Principles, Techniques and Application}
+      \field{year}{1991}
+      \verb{urlraw}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:ba8_hariharan.pdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:ba8_hariharan.pdf
+      \endverb
+    \endentry
+    \entry{LectTheorOpticsSS22}{online}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6de6d3f08e68308a1910ef4964665f7a}{%
+           family={Rockstuhl},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e670eaeaf51cdc13068c2113214fbae}{%
+           family={Paszkiewicz},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af58486d8fdb4b245ee319bd4d5761f8}{%
+           family={Perdana},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5df5d01776a12ad4e130a00541b33212}{%
+           family={Vavilin},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36ecc026e95756d4de8dbebe4e871d7c}
+      \strng{fullhash}{5648cba3e2b85aa053f4efde3aa8062b}
+      \strng{bibnamehash}{36ecc026e95756d4de8dbebe4e871d7c}
+      \strng{authorbibnamehash}{36ecc026e95756d4de8dbebe4e871d7c}
+      \strng{authornamehash}{36ecc026e95756d4de8dbebe4e871d7c}
+      \strng{authorfullhash}{5648cba3e2b85aa053f4efde3aa8062b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 24 11 2025}
+      \field{title}{Lecture 12: Theoretical Optics (SS 22)}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pasta.place/Physik/Master/Theoretical_Optics/Slides/SS_22/Lecture_12.pdf
+      \endverb
+      \verb{url}
+      \verb https://pasta.place/Physik/Master/Theoretical_Optics/Slides/SS_22/Lecture_12.pdf
+      \endverb
+    \endentry
+    \entry{ThorlabsHeNe}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=95db84d81d70c6e336b029ce24ced8fe}{%
+           family={{Thorlabs, Inc.}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{95db84d81d70c6e336b029ce24ced8fe}
+      \strng{fullhash}{95db84d81d70c6e336b029ce24ced8fe}
+      \strng{bibnamehash}{95db84d81d70c6e336b029ce24ced8fe}
+      \strng{authorbibnamehash}{95db84d81d70c6e336b029ce24ced8fe}
+      \strng{authornamehash}{95db84d81d70c6e336b029ce24ced8fe}
+      \strng{authorfullhash}{95db84d81d70c6e336b029ce24ced8fe}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 24 11 2025}
+      \field{title}{Helium-Neon Laser Tutorial}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10776
+      \endverb
+      \verb{url}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10776
+      \endverb
+    \endentry
+    \entry{Messung}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ec7805e0cce36c07750d04f60857cd9}{%
+           family={Tutor},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ec7805e0cce36c07750d04f60857cd9}
+      \strng{fullhash}{2ec7805e0cce36c07750d04f60857cd9}
+      \strng{bibnamehash}{2ec7805e0cce36c07750d04f60857cd9}
+      \strng{authorbibnamehash}{2ec7805e0cce36c07750d04f60857cd9}
+      \strng{authornamehash}{2ec7805e0cce36c07750d04f60857cd9}
+      \strng{authorfullhash}{2ec7805e0cce36c07750d04f60857cd9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Last modified: 2022/12/02 10:48 by cfrisch}
+      \field{title}{Anleitung zur Datenaufnahme und Bearbeitung}
+      \verb{urlraw}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:messung_ba8.pdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:messung_ba8.pdf
+      \endverb
+    \endentry
+    \entry{Kohärent}{book}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=ce50c376a1243324d9af283ca094de09}{%
+           family={Werner\bibnamedelima Lauterborn},
+           familyi={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Martin\bibnamedelima Wiesenfeldt},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=2,
+           suffix={Thomas\bibnamedelima Kurz},
+           suffixi={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ce50c376a1243324d9af283ca094de09}
+      \strng{fullhash}{ce50c376a1243324d9af283ca094de09}
+      \strng{bibnamehash}{ce50c376a1243324d9af283ca094de09}
+      \strng{authorbibnamehash}{ce50c376a1243324d9af283ca094de09}
+      \strng{authornamehash}{ce50c376a1243324d9af283ca094de09}
+      \strng{authorfullhash}{ce50c376a1243324d9af283ca094de09}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kohärente Optik}
+      \field{year}{1993}
+      \verb{urlraw}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:lauterborn_kurz_wiesenfeld_kohaerenz.pdf
+      \endverb
+      \verb{url}
+      \verb https://wiki.physik.fu-berlin.de/fp/_media/private:lauterborn_kurz_wiesenfeld_kohaerenz.pdf
+      \endverb
+    \endentry
+    \entry{LauterbornBA8}{misc}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=c7e549314a86b6efe2048daaf606291b}{%
+           family={Werner\bibnamedelima Lauterborn},
+           familyi={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Michael\bibnamedelima Wiesenfeld},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=2,
+           suffix={Thomas\bibnamedelima Kurz},
+           suffixi={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{c7e549314a86b6efe2048daaf606291b}
+      \strng{fullhash}{c7e549314a86b6efe2048daaf606291b}
+      \strng{bibnamehash}{c7e549314a86b6efe2048daaf606291b}
+      \strng{authorbibnamehash}{c7e549314a86b6efe2048daaf606291b}
+      \strng{authornamehash}{c7e549314a86b6efe2048daaf606291b}
+      \strng{authorfullhash}{c7e549314a86b6efe2048daaf606291b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://wiki.physik.fu-berlin.de/fp/_media/private:ba8_lauterborn_kurz_wiesenfeld_kap7.pdf}}
+      \field{title}{BA8 -- Kapitel 7: Holographie}
+      \field{year}{2020}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

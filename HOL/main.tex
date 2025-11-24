@@ -98,9 +98,9 @@
 
 \section{Einführung}
 
-%Historisch war der Franck-Hertz-Versuch (1914) ein Meilenstein in der Quantenphysik, da er erstmals experimentell die Existenz diskreter Energieniveaus in Atomen bestätigte und das Bohrsche Atommodell unterstützte. Die Erkenntnisse aus diesem Experiment sind grundlegend für das Verständnis atomarer und molekularer Prozesse, die in der Materialforschung, Chemie und Quantentechnologie Anwendung finden. Der Franck-Hertz-Versuch demonstriert die Quantisierung atomarer Energieniveaus durch unelastische Elektronen-Atom-Stöße. 
+Holographie nutzt die Wellennatur des Lichts, um nicht nur die Intensität, sondern auch die Phaseninformation eines Lichtfeldes zu speichern und dadurch dreidimensionale Abbildungen zu rekonstruieren. Seit den Arbeiten von Gabor in den späten 1940er-Jahren hat sich die Holographie von einer theoretischen Idee zu einem vielseitigen Werkzeug in Optik, Messtechnik und Datenspeicherung entwickelt (\cite{Gabor}). Eine zentrale Voraussetzung für die Erzeugung eines Hologramms ist die zeitliche und räumliche Kohärenz der verwendeten Lichtquelle, da nur hinreichend kohärente Wellen stabile Interferenzmuster erzeugen können. 
 
-%In diesem Experiment wird die charakteristische Strom-Spannungs-Kurve für Quecksilberdampf (bei 150°C, 190°C, 210°C) und Neon (bei Raumtemperatur) untersucht, um Übergangsenergien, Wellenlängen und Frequenzen der emittierten Photonen zu bestimmen. Die Analyse der Kurvenverläufe bei variierten Temperaturen ermöglicht Rückschlüsse auf temperaturabhängige Effekte im Anregungsprozess.
+In diesem Versuch werden daher zwei eng verknüpfte Aspekte moderner Wellenoptik untersucht: Zum einen wird ein Michelson-Interferometer eingesetzt, um den Selbstkohärenzgrad eines He-Ne-Lasers experimentell zu bestimmen und daraus seine Kohärenzlänge zu extrahieren. Aus dem Kontrast der gemessenen Interferenzmuster in Abhängigkeit von der optischen Wegdifferenz lässt sich sowohl die Stabilität des Aufbaus als auch die Eignung der Lichtquelle für interferometrische Anwendungen beurteilen (\cite{Kohärent}). Zum anderen wird mit derselben Lichtquelle ein Weißlicht-Reflexionshologramm (Denisyuk-Hologramm) einer Lego-Figur aufgenommen und nach der chemischen Entwicklung qualitativ ausgewertet (\cite{LauterbornBA8}). 
 
 
 \section{Physikalischen Grundlagen}
@@ -168,13 +168,20 @@ folgt. Diese wird im Versuch bestimmt, um die Stabilität des Aufbaus abzuschät
     \caption{Das Michelson-Interferometer, genommen aus \cite{Messung}} 
 \end{wrapfigure}
 
-Um ein Michelson-Interferometer zu beschreiben, betrachten wir einen Laser, welcher durch einen Strahlteiler in zwei senkrechte Teile aufgespalten wird (Siehe Abb. 1). Diese Teile werden jeweils von einem Spiegel reflektiert, wobei ein Strahl einen festen Spiegel bei Distanz $S$ erreicht, und der zweite einen verstellbaren Spiegel bei Distanz $S+z$ erreicht. Ist $z=0$, so haben die beiden Strahlen keinen Wegunterschied, und der Detektor misst maximale Interferenz. Bei $z\neq0$ allerdings hat der zweite Strahl einen Wegunterschied von $2z$ im Vergleich zum ersten Strahl, und hat deshalb eine zeitliche Verschiebung um $\tau = \frac{2z}{c}$. Somit interferiert der Strahl auf dem Rückweg mit sich selbst, und der Detektor misst eine geringere Intensität. Dies ist der Zweck eines Michelson-Interferometers. Um die Interferenz genauer zu beschreiben, benötigen wir das Konzept der zeitlichen Kohärenz, welches nun folgt. 
+Um ein Michelson-Interferometer zu beschreiben, betrachten wir einen Laser, welcher durch einen Strahlteiler in zwei senkrechte Teile aufgespalten wird (Siehe Abb. 1).
+Diese Teile werden jeweils von einem Spiegel reflektiert, wobei ein Strahl einen festen Spiegel bei Distanz $S$ erreicht, und der zweite einen verstellbaren Spiegel
+bei Distanz $S+z$ erreicht. Ist $z=0$, so haben die beiden Strahlen keinen Wegunterschied, und der Detektor misst maximale Interferenz. Bei $z\neq0$ allerdings
+hat der zweite Strahl einen Wegunterschied von $2z$ im Vergleich zum ersten Strahl, und hat deshalb eine zeitliche Verschiebung um $\tau = \frac{2z}{c}$.
+Somit interferiert der Strahl auf dem Rückweg mit sich selbst, und der Detektor misst eine geringere Intensität. Dies ist der Zweck eines Michelson-Interferometers.
 \\
 
 
 \subsection{Holographie}
 
-Holographie beruht auf der Idee, dass die dreidimensionale Information aus einem komplexen elektromagnetischen Lichtfeld auf einer zweidimensionale Ebene gespeichert und später rekonstruiert werden kann. Dazu wird, wie hier im Versuch auch verwendet, auf einer Fotoplatte das Interferenzmuster gespeichert. Es werden dabei zwei kohärente Lichtwellen, der Referenzstrahl und Objektstrahl, auf dem Film interferieren. Diese kommen aus der selben Lichtquelle, in den meisten Fällen ein monochromatischer Laser, damit Strahlen kohärent bleiben und über die Belichtungszeit unverändert bleiben.
+Holographie beruht auf der Idee, dass die dreidimensionale Information aus einem komplexen elektromagnetischen Lichtfeld auf einer zweidimensionale Ebene gespeichert und später
+rekonstruiert werden kann. Dazu wird, wie hier im Versuch auch verwendet, auf einer Fotoplatte das Interferenzmuster gespeichert. Es werden dabei zwei kohärente Lichtwellen, 
+der Referenzstrahl und Objektstrahl, auf dem Film interferieren. Diese kommen aus der selben Lichtquelle, in den meisten Fällen ein monochromatischer Laser, damit Strahlen 
+kohärent bleiben und über die Belichtungszeit unverändert bleiben.
 
 \begin{figure} [ht!]
     \begin{subfigure}{.5\linewidth}
@@ -193,9 +200,9 @@ Holographie beruht auf der Idee, dass die dreidimensionale Information aus einem
     \label{fig:Hologram}
 \end{figure}
 
-Wie in Abbildung \ref{fig:Hologram} sichtbar, wird der Laserstrahl zunächst in zwei kohärente Teilstrahlen aufgeteilt. Der Objektstrahl wird auf das aufzunehmende Objekt gelenkt und dabei teilweise gestreut oder reflektiert, während der Referenzstrahl direkt auf die Fotoplatte trifft. Treffen beide Wellenfronten aufeinander, überlagern sie sich und erzeugen auf der Fotoplatte ein Interferenzmuster. Da die Platte spezifische Chemische Prozesse bei Lichteinstrahlung eingeht, können Interferenzmaxima und -minima einfach gespeichert werden. Dieses Muster enthält sowohl die Intensitäts- als auch die Phaseninformation des ursprünglichen Objektfeldes.
+Wie in Abbildung \ref{fig:Hologram} zu sehen ist, wird der Laserstrahl zunächst in zwei kohärente Teilstrahlen aufgeteilt. Der Objektstrahl wird auf das aufzunehmende Objekt gelenkt und dabei teilweise gestreut oder reflektiert, während der Referenzstrahl direkt auf die Fotoplatte trifft. Treffen beide Wellenfronten aufeinander, überlagern sie sich und erzeugen auf der Fotoplatte ein Interferenzmuster. Durch die lichtempfindlichen chemischen Prozesse in der Fotoemulsion werden Interferenzmaxima und -minima lokal gespeichert. Dieses Muster enthält sowohl die Intensitäts- als auch die Phaseninformation des ursprünglichen Objektfeldes.
 
-Wenn der Referenzstrahl die Fotoplatte erneut beleuchtet, kann das Objekt im Hologramm wieder rekonstruiert werden. Durch das Interferenzmuster werden jeweils drei Bilder sichtbar: der originaler Referenzstrahl, das virtuelle Objekt und das „reale” Objekt. Bei der Holographie wird das virtuelle Objekt beobachtet, sodass das Auge dieses wieder als dreidimensionale Abbildung wahrnehmen kann. Das reelle Objekt wird sich auf einen Punkt fokussieren und kann auf einem Schirm dargestellt werden (\cite{Gabor}).
+Wenn der Referenzstrahl die Fotoplatte erneut beleuchtet, kann das Objekt im Hologramm wieder rekonstruiert werden. Durch das Interferenzmuster werden jeweils drei Bilder sichtbar: der originaler Referenzstrahl, das virtuelle Objekt und das „reelle” Objekt. Bei der Holographie wird das virtuelle Objekt beobachtet, sodass das Auge dieses wieder als dreidimensionale Abbildung wahrnehmen kann. Das reelle Objekt wird sich auf einen Punkt fokussieren und kann auf einem Schirm dargestellt werden (\cite{Gabor}).
 \newline 
 Für eine mathematische Beschreibung betrachten wir einen Referenzstrahl mit reeller Amplitude $r$, der auf unsere Fotoplatte scheint. Auf der Fotoplatte ist durch die Belichtung und Entwicklung eine komplexe Amplitude, genannt $o(x,y)$ entstanden, mit der der Referenzstrahl interferiert. Somit gilt für die Amplitude:
 \begin{equation}
@@ -205,7 +212,7 @@ Für eine mathematische Beschreibung betrachten wir einen Referenzstrahl mit ree
 
 Hier kann man klar vier Terme erkennen. Der Term $r^{2}$ verhält sich so, als würde das Hologramm nicht existieren. Er beschreibt den Anteil der Referenzwelle, der ohne Wechselwirkung mit dem Hologramm weiterläuft und kein Bild erzeugt. Der Term $|o(x,y)|^{2}$ führt zu einem diffusen Leuchten um das Hologramm, da er ausschließlich von der Ortsverteilung der Objektwelle abhängt. 
 
-Die Interferenzterme $ro(x,y)$ und $ro^{*}(x,y)$ erzeugen hingegen jeweils ein Bild, da sie sich wie die Objektwelle oder ihre komplex konjugierte Form verhalten. Der Term $ro(x,y)$ rekonstruiert ein fokussiertes Bild an der ursprünglichen Objektposition, das sogenannte \emph{virtuelle Bild}, da er proportional zur Objektwelle ist. Der komplex konjugierte Term $ro^{*}(x,y)$ erzeugt ein zweites Bild, das sogenannte \emph{reale Bild}, welches auf der gegenüberliegenden Seite des Referenzstrahls erscheint und auf einen Punkt fokussiert. (Siehe S.~12,~15 \cite{Hariharan})
+Die Interferenzterme $ro(x,y)$ und $ro^{*}(x,y)$ erzeugen hingegen jeweils ein Bild, da sie sich wie die Objektwelle oder ihre komplex konjugierte Form verhalten. Der Term $ro(x,y)$ rekonstruiert ein fokussiertes Bild an der ursprünglichen Objektposition, das sogenannte \emph{virtuelle Bild}, da er proportional zur Objektwelle ist. Der komplex konjugierte Term $ro^{*}(x,y)$ erzeugt ein zweites Bild, das sogenannte \emph{reelle Bild}, welches auf der gegenüberliegenden Seite des Referenzstrahls erscheint und auf einen Punkt fokussiert. (Siehe S.~12,~15 \cite{Hariharan})
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\linewidth]{WhiteReflect.pdf}
@@ -231,7 +238,7 @@ Im Gegensatz zu typischen Hologrammen wird bei der Rekonstruktion nicht die orig
 
 Unsere erste Aufgabe bestand darin, ein Weißlichthologramm selbst zu erstellen. Dazu wurde ein He–Ne-Laser verwendet. Der Laserstrahl wurde unter einem Winkel von etwa $45^\circ$ auf die Emulsionsplatte gerichtet. Dieser schräg einfallende Referenzstrahl wurde genutzt, um störende Rückreflexionen in das Laserrohr zu reduzieren und Referenz- und Objektwellen räumlich deutlicher zu trennen, als es mit einem kleineren Winkel möglich gewesen wäre.
 
-Das Laserlicht wurde anschließend durch den Film auf ein etwa $3\,\mathrm{cm}\times 3\,\mathrm{cm}\times <2\,\mathrm{cm}$ großes Objekt übertragen, von dem das Licht diffus reflektiert wurde, sodass die Emulsion belichtet wurde. Das daraus resultierende Hologramm war in Aufnahme~\ref{fig:Weißlicht} zu sehen.
+Das Laserlicht wurde anschließend durch den Film auf ein etwa $3\,\mathrm{cm}\times 3\,\mathrm{cm}\times <2\,\mathrm{cm}$ großes Objekt, was hier eine weiße Lego Figur war (\ref{fig:Weißlicht}), übertragen, von dem das Licht diffus reflektiert wurde, sodass die Emulsion belichtet wurde. Das daraus resultierende Hologramm war in Aufnahme~\ref{fig:Weißlicht} zu sehen.
 
 Das Experiment wurde mit drei verschiedenen Laserbelichtungszeiten durchgeführt: 1, 2 und 3 Sekunden. Nachdem die Emulsion belichtet worden war, wurde sie in mehreren Bädern entwickelt: Wasser, einer Entwicklerlösung aus $36 \unit{g/l}$ Ascorbinsäure und $143,1 \unit{g/l}$ $Na_2HPO_4(12 H_2O)$ und $24 \unit{g/l}$ $NaOH$ im Verhältnis 1:1 sowie einem Bleichbad. Das Hologramm wurde in jedem Bad für 2 Minuten entwickelt, bevor es für 30–40 Minuten in ein letztes Wasserbad zum Ausspülen gelegt wurde. Dabei wurde darauf geachtet, dass die Hologramme vollständig in den Flüssigkeiten untergetaucht waren. Anschließend wurde die Emulsion eine Stunde lang in den Trockenschrank gelegt.
 
@@ -263,15 +270,15 @@ Nach der Messung wurde der Spiegel verschoben, um die Intensitäten bei verschie
 
 \subsection{Michelson-Interferometer} \label{chap:michelson}
 
-Als einziges quantitatives Experiment dieses Protokolls musste man mithilfe des Michelson Interferometers die Stabilität des Aufbaus und das Selbstkohärenzgrad $\gamma(\tau)$ des verwendeten Lasers bestimmen. Mit $|\gamma(\tau)| = K(\tau)$ kann man den Kontrast mit 
+Als einziges quantitatives Experiment dieses Protokolls musste man mithilfe des Michelson Interferometers die Stabilität des Aufbaus und das Selbstkohärenzgrad $\gamma(\tau)$ des verwendeten Lasers bestimmen. Mit $\gamma(\tau) = |K(\tau)|$ kann man den Kontrast mit 
 \begin{align} \label{eq:K_U}
     K=\frac{U_{\max}-U_{\min}}{U_{\max}+U_{\min}}
 \end{align}
- berechnen. Die Intensitäten $I_{max}$ und $I_{min}$ welche in der Formel vorkommen wurden von einer Photodiode welche Spannung misst, weshalb es genauer dafür die Spannung $U_{max}$ und $U_{min}$ zu verwenden ist. Die Formel ändert sich nicht, da sich die Spannung linear mit der Intensität skaliert, was mit der Formel weggekürzt wird. 
+ berechnen. Die Intensitäten $I_{\max}$ und $I_{\min}$ welche in der Formel~\ref{eq:K} vorkommen wurden von einer Photodiode aufgenommen welche nur eine Spannung misst, weshalb es genauer dafür die Spannung $U_{\max}$ und $U_{\min}$ zu verwenden ist. Die Formel ändert sich nicht, da sich die Spannung linear mit der Intensität skaliert, was mit der Formel weggekürzt wird. 
 
 Es wurde bei jeder Messung die Nullrate des Raumes bei umgebender Beleuchtung gemessen, welche auch von den eigentlichen Daten auch abgezogen wurde. Das lag daran, dass gemessene Lichtintensitäten lineare Additionen aller Lichtquellen sind. Durch das einfache Subtrahieren des Hintergrunds wurden daher die gewünschten Daten erhalten. Dafür wurden die ersten Sekunden ohne Beleuchtung des Lasers aufgenommen und jeweils der durchschnittlicher Wert berechnet. Dieser lag zwischen $90mV \sim 99 mV$ mit Unsicherheiten von etwa $\pm 0.17mV$. 
 
-Das größte Problem lag daran $U_{max}$ und $U_{min}$ gut zu bestimmen, da die Daten etwas unsauber aufgenommen waren. Aus diesem Grund wurden die Daten nicht nur mit dem Programm Vorort ausgewertet, sondern auch zusätzlich mit einem Python Programm ("HOL.py") untersucht. Diese zwei Methoden werden in den nächsten Unterabschnitten besprochen werden.
+Das größte Problem lag daran $U_{\max}$ und $U_{\min}$ gut zu bestimmen, da die Daten etwas unsauber aufgenommen waren. Aus diesem Grund wurden die Daten nicht nur mit dem Programm Vorort ausgewertet, sondern auch zusätzlich mit einem Python Programm ("HOL.py") untersucht. Diese zwei Methoden werden in den nächsten Unterabschnitten besprochen werden.
 
 
 \subsubsection{Datenanalyse mithilfe des LabVIEW-Programms}
@@ -308,7 +315,7 @@ Diese Daten wurde dann wie die im nächsten Kapitel mithilfe eines Python-Progra
 
 \subsubsection{Datenanalyse mit Python}
 
-Die Daten wurden mit Lab VIEW per Hand analysiert, also konnte man selber einschätzen wo die Peaks liegen könnten. Hier kam das Ziel es etwas mehr empirisch durchzuführen. Es wurde dafür wir mit dem Programm in dir relevanten Bereiche eingeschränkt, wo die meisten Schwingungen vorlagen. Hier wurde dir Nullrate aber sofort identifiziert und alle Daten um diesem Wert verringert. Den Algorithmus zu finden welche die Daten am besten analysieren würde, kam aber nicht leicht, da oft Peaks mit einer nicht maximalen Amplitude vorkamen. 
+Die Daten wurden mit LabVIEW per Hand analysiert, sodass man selbst einschätzen konnte, wo die Peaks liegen könnten. Hier kam das Ziel auf, dies etwas empirischer durchzuführen. Dafür wurde wie mit dem LabVIEW Programm auf die relevanten Bereiche eingeschränkt, wo die meisten Schwingungen vorlagen. Hier wurde die Nullrate aber sofort identifiziert und alle Daten um diesen Wert verringert. Den Algorithmus zu finden, welcher die Daten am besten analysieren würde, kam aber nicht leicht, da oft Peaks mit einer nicht maximalen Amplitude vorkamen.
 
 Der Algorithmus wird im angehangenem Python Programm (HOL.py) zu sehen werden, aber im Grunde genommen funktioniert er folgendermaßen:
 \begin{itemize}
@@ -328,9 +335,9 @@ Der Algorithmus wird im angehangenem Python Programm (HOL.py) zu sehen werden, a
     \item Für die Fehler wird wieder Mittlere absolute Abweichung verwendet
 \end{itemize}
 
-Man kann Im Anhang zwei solcher Datenanalysen sehen, also Abb.~\ref{fig:1.7} und ~\ref{fig:0.8}. Das sind zwei Datensätze mit verschiedenen $d$ Werten.
+Man kann Im Anhang zwei solcher Datenanalysen sehen, also Abb.~\ref{fig:1.7} und~\ref{fig:0.8}. Das sind zwei Datensätze mit verschiedenen $d$ Werten.
 
-So werden die Werte in Tabelle \ref{tab:hol_neue_daten} erstellt. Hier ist wie bei den LabVIEW Daten der Kontrastwert jeweils für jeden Peak ausgerechnet
+So werden die Werte in Tabelle~\ref{tab:hol_neue_daten} erstellt. Hier ist wie bei den LabVIEW Daten der Kontrastwert jeweils für jeden Peak ausgerechnet
 
 \begin{table}[ht!]
     \centering
@@ -358,11 +365,11 @@ So werden die Werte in Tabelle \ref{tab:hol_neue_daten} erstellt. Hier ist wie b
     \label{tab:hol_neue_daten}
 \end{table}
 
-\subsubsection{Auswertung} \label{Auswertung}
+\subsubsection{Auswertung}\label{Auswertung}
 
-Ab diesem Schritt wurde die Auswertung wieder etwas einfacher, da die Kontrastwerte bereits mit der Formel \ref{eq:K_U} in den Tabellen berechnet wurden. Diese Werte können direkt geplottet und ausgewertet werden (siehe Abb.~\ref{fig:K}). Dabei wird sichtbar, dass $K(d)$ nicht linear verläuft, sondern einem exponentiellen Abfall folgt, also etwa $K(d) \propto e^{-\omega d}$. Um das Fitting zu vereinfachen, müssen die $K$-Werte linearisiert werden, d.\,h. es wird der Logarithmus gebildet. Die gesuchte Kohärenzlänge kann anschließend gefunden werden, wenn $\ln(K(d)) = -1$ gilt. Wie in den Tabellen sichtbar wird, wurden die Distanzen, bei denen $K(d) \approx 1/e$ wäre, nicht erreicht. Dieser Wert muss daher extrapoliert werden. 
+Ab diesem Schritt wurde die Auswertung wieder etwas einfacher, da die Kontrastwerte bereits mit der Formel~\ref{eq:K_U} in den Tabellen berechnet wurden. Wenn diese Werte direkt geplottet werden, wird sichtbar, dass $K(d)$ nicht linear verläuft, sondern einem exponentiellen Abfall folgt, also etwa $K(d) \propto e^{-\omega d}$. Um das Fitting zu vereinfachen, müssen die $K$-Werte linearisiert werden, d.\,h. es wird der Logarithmus gebildet. Die gesuchte Kohärenzlänge kann anschließend gefunden werden, wenn $\ln(K(d)) = -1$ gilt. Wie in den Tabellen sichtbar ist, wurden die Distanzen, bei denen $K(d) \approx 1/e$ wäre, nicht erreicht. Dieser Wert muss daher extrapoliert werden.
 
-Wie ebenfalls zu sehen ist, wird anstelle von $\tau$ hier $d$ verwendet. Beim Aufbau wurde der Wegunterschied als Distanz zwischen dem ersten Spiegel und dem Beamsplitter bis zum zweiten Spiegel berücksichtigt (siehe Abb.~\ref{fig:Reflect}). Diese Distanz wurde als $z$ notiert. Da das Licht den Weg zum Spiegel und wieder zurück legt, ergibt sich die gesamte Weglänge zu $d = 2z$. Die Laufzeitdifferenz könnte man als $\tau = d / c$ berechnen, doch um die Darstellung übersichtlich zu halten, wurde darauf verzichtet. Somit ergibt sich die Kohärenzlänge $l_c$ direkt aus der Bedingung $K(l_c) = 1/e$.
+Wie ebenfalls zu sehen ist, wird anstelle von $\tau$ hier $d$ verwendet. Beim Aufbau wurde der Wegunterschied als Distanz vom ersten Spiegel über den Beamsplitter zum zweiten Spiegel berücksichtigt (siehe Abb.~\ref{fig:Reflect}). Diese Distanz wurde als $z$ notiert. Da das Licht den Weg zum Spiegel und wieder zurücklegt, ergibt sich die gesamte Weglänge zu $d = 2z$. Die Laufzeitdifferenz könnte man als $\tau = d / c$ berechnen, doch um die Darstellung übersichtlich zu halten, wurde darauf verzichtet. Somit ergibt sich die Kohärenzlänge $l_c$ direkt aus der Bedingung $K(l_c) = 1/e$.
 
 \begin{figure}[ht!]
     \centering
@@ -453,16 +460,16 @@ Um die Kohärenzlänge des Lasers zu bestimmen, musste der Kontrast ermittelt we
 
 Diese Schwankung des Maximums konnte ebenso bei den Minima beobachtet werden und ist auf den unpräzisen Aufbau zurückzuführen. Mit zunehmender Wegdifferenz $d$ nimmt der Selbstkohärenzgrad des Lasers ab, sodass auch der beobachtbare Kontrast $K(d)$ kleiner wird. Dadurch werden Maxima und Minima weniger deutlich unterscheidbar. Zusätzlich konnten durch die angeregten Vibrationen beide Spiegel kurzzeitig um mehr als eine Wellenlänge verschoben werden. Je nach Stärke dieser Anregung änderte sich die effektive Wegdifferenz $d$ während der Aufnahme, was die Lage der Extremwerte verschoben und deren Varianz erhöht hat.
 
-Mit dem Interferenzmuster wie in dem Bild erkennbar kann erschlossen werden, dass eine Interferenz stattfindet, aber vielleicht mehr sensibel zu Vibrationen ist als das ideale Muster von konzentrischen Ringen. Dieses ideales Muster konnte aber nicht erstellt werden, wegen dem ungenauen Aufbau. Es konnte der beweglicher Spiegel sehr grob in z Richtung verschoben werden und mit Feinsteuerung der Spiegel selber etwas justiert werden. Da hier Kohärenz benötigt wurde, war dieser Prozess Zeitaufwändig. Um Zeit zu sparen gab es eine Wahrscheinlichkeit, dass es zu Fehlern im Prozess geführt hat. Das muss auch bedacht werden, wenn man sich die Resultate anschaut.
+Mit dem Interferenzmuster, wie in dem Bild erkennbar, kann erschlossen werden, dass eine Interferenz stattfindet, aber vielleicht sensibler zu Vibrationen ist als das ideale Muster von konzentrischen Ringen. Dieses ideale Muster konnte aber nicht erstellt werden wegen dem ungenauen Aufbau. Es konnte der bewegliche Spiegel sehr grob in z-Richtung verschoben werden und mit Feinsteuerung der Spiegel selber etwas justiert werden. Da hier Kohärenz benötigt wurde, war dieser Prozess zeitaufwändig. Um Zeit zu sparen, gab es eine Wahrscheinlichkeit, dass es zu Fehlern im Prozess geführt hat. Das muss auch bedacht werden, wenn man sich die Resultate anschaut.
 
-Bei dem Prozess der Peak-Findung wurden zwei Methoden durchgeführt, eine mehr Manuelle und eine etwas mehr Mathematisch basierte Methode. Diese waren sehr voreingenommen zu dem erwartetem Resultat des Benutzer. Der Algorithmus welcher verwendet wurde konnte auch komplett andere Werte zu der manuellen Methode bringen wenn man zu naiv die Peaks bestimmt hat. Die dadurch entstehende exponentielle Kurve des Kontrastes wurde mit einem Logarithmus linearisiert und damit ein Fit angepasst. Es wurde aber klar das mit beiden unterschiedlichen Methoden eine hohe Variation aufkam.
+Bei dem Prozess der Peak-Findung wurden zwei Methoden durchgeführt, eine mehr manuelle und eine etwas mehr mathematisch basierte Methode. Diese waren sehr voreingenommen zu dem erwarteten Resultat des Benutzers. Der Algorithmus, welcher verwendet wurde, konnte auch komplett andere Werte zu der manuellen Methode bringen, wenn man zu naiv die Peaks bestimmt hat. Die dadurch entstehende exponentielle Kurve des Kontrastes wurde mit einem Logarithmus linearisiert und damit ein Fit angepasst. Es wurde aber klar, dass mit beiden unterschiedlichen Methoden eine hohe Variation aufkam.
 
 Für einen Vergleich der berechneten Werte mit den theoretischen Werten des Lasers musste dieser noch bestimmt werden. Für eine Lorentz-förmige Linienform ergibt sich die Kohärenzlänge $l_{th} = c/(\pi\Delta\nu)$. Hier muss nur die spektrale Linienbreite $\Delta\nu$ bekannt sein. Diese liegt bei He–Ne-Lasern im Bereich von etwa $1.5\,\mathrm{GHz}$, was zu Kohärenzlängen von $l_\mathrm{th} \approx 6\,\mathrm{cm}$ führt (\cite{ThorlabsHeNe}). Bei unserem verwendeten Laser handelte es sich wahrscheinlich um einen nicht-stabilisierten, multimodigen He–Ne-Laser, dessen effektive Linienbreite in diesem Bereich liegt. In manchen anderen Quellen wird eine Vereinfachung dieser Formel ohne $\pi$ verwendet, wodurch $l_\mathrm{th} \approx 20\,\mathrm{cm}$ abgeschätzt wird (\cite{LectTheorOpticsSS22}). Unser experimentell bestimmter Wert von $\approx 26 \pm 5\,\mathrm{cm}$ liegt somit in der typischen Größenordnung handelsüblicher He–Ne-Laser, obwohl er etwas über den zu erwartenden Werten liegt.
 
 
 Als Verbesserung wäre es sinnvoll gewesen, den Laser auch ohne Interferenzmuster aufzunehmen, also mit nur einem Lichtweg. Dadurch hätte die reine Stabilität der Photodiode und des Messsystems bestimmt werden können, ohne dass Interferenzschwankungen die Messung überlagern. Eine solche Referenzmessung hätte es ermöglicht, den elektronischen und optischen Grundrauschpegel zu quantifizieren und anschließend von den eigentlichen Interferenzdaten abzuziehen, wodurch die Bestimmung des Kontrasts stabiler geworden wäre.
 
-Wenn beide Spiegel auf senkrechten Schienen lagen oder ein optischer Tisch verwendet wäre, wären viele Unsicherheiten eliminiert. Eine feste sehr gut fein justierte Spiegelposition hätte auch Fehler minimiert. Letztlich wäre eine mehr konsistente Anregung des Spiegels erwünscht werden, wie dein Motor oder ein Stellantrieb um nur den beweglichen Spiegel zu bewegen. Wenn solche Verbesserungen an dem Aufbau vorgelegen hätten, wäre auch die Auswertung viel einfacher gewesen.
+Wenn beide Spiegel auf senkrechten Schienen lagen oder ein optischer Tisch verwendet wäre, wären viele Unsicherheiten eliminiert. Eine feste, sehr gut fein justierte Spiegelposition hätte auch Fehler minimiert. Letztlich wäre eine konsistentere Anregung des Spiegels erwünscht gewesen, wie ein Motor oder ein Stellantrieb, um nur den beweglichen Spiegel zu bewegen. Wenn solche Verbesserungen an dem Aufbau vorgelegen hätten, wäre auch die Auswertung viel einfacher gewesen.
 
 \subsection{Hologramm}
 % Damn that took me off guard: "[sie] sind alle gescheitert"
@@ -478,6 +485,7 @@ Auch ist die Erschütterungsminimierung während des Prozesses eine einfache Feh
 
 
 \printbibliography
+\newpage
 
 
 \section{Anhänge}

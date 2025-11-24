@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  24 NOV 2025 01:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.22)  24 NOV 2025 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,7 +877,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--162
 
  []
 
-<Interferometer.pdf, id=136, 332.24126pt x 299.1175pt>
+<Interferometer.pdf, id=138, 332.24126pt x 299.1175pt>
 File: Interferometer.pdf Graphic file (type pdf)
 <use Interferometer.pdf>
 Package pdftex.def Info: Interferometer.pdf  used on input line 167.
@@ -892,100 +892,96 @@ Underfull \hbox (badness 2818) in paragraph at lines 168--168
 \T1/cmr/m/n/10.95 Interferometer, ge-nom-men aus []Tu-tor
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 171--177
 
  []
 
-[3 <./Interferometer.pdf>]
-<Recording.pdf, id=154, 227.85126pt x 144.54pt>
+<Recording.pdf, id=150, 227.85126pt x 144.54pt>
 File: Recording.pdf Graphic file (type pdf)
 <use Recording.pdf>
-Package pdftex.def Info: Recording.pdf  used on input line 182.
+Package pdftex.def Info: Recording.pdf  used on input line 189.
 (pdftex.def)             Requested size: 211.26288pt x 134.01938pt.
-<Reconstruction.pdf, id=155, 251.94125pt x 134.5025pt>
+<Reconstruction.pdf, id=151, 251.94125pt x 134.5025pt>
 File: Reconstruction.pdf Graphic file (type pdf)
 <use Reconstruction.pdf>
-Package pdftex.def Info: Reconstruction.pdf  used on input line 188.
+Package pdftex.def Info: Reconstruction.pdf  used on input line 195.
 (pdftex.def)             Requested size: 211.26288pt x 112.78633pt.
 
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 180--192
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 187--199
 [][] [] 
  []
 
-<WhiteReflect.pdf, id=161, 333.40561pt x 166.79807pt>
+[4 <./Interferometer.pdf> <./Recording.pdf
+
+pdfTeX warning: pdflatex (file ./Recording.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+> <./Reconstruction.pdf
+
+pdfTeX warning: pdflatex (file ./Reconstruction.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]
+<WhiteReflect.pdf, id=210, 333.40561pt x 166.79807pt>
 File: WhiteReflect.pdf Graphic file (type pdf)
 <use WhiteReflect.pdf>
-Package pdftex.def Info: WhiteReflect.pdf  used on input line 211.
+Package pdftex.def Info: WhiteReflect.pdf  used on input line 218.
 (pdftex.def)             Requested size: 341.43437pt x 170.82913pt.
-[4 <./Recording.pdf> <./Reconstruction.pdf
-
-pdfTeX warning: pdflatex.exe (file ./Reconstruction.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
->]
 <Weißlichthologramm.jpeg, id=217, 2947.01pt x 1288.815pt>
 File: Weißlichthologramm.jpeg Graphic file (type jpg)
 <use Weißlichthologramm.jpeg>
-Package pdftex.def Info: Weißlichthologramm.jpeg  used on input line 225.
+Package pdftex.def Info: Weißlichthologramm.jpeg  used on input line 232.
 (pdftex.def)             Requested size: 384.1096pt x 167.96481pt.
- [5 <./WhiteReflect.pdf> <./Weißlichthologramm.jpeg>]
-Overfull \hbox (14.87209pt too wide) in paragraph at lines 246--247
+ [5 <./WhiteReflect.pdf>] [6 <./Weißlichthologramm.jpeg>]
+Overfull \hbox (14.87209pt too wide) in paragraph at lines 253--254
 []\T1/cmr/m/n/10.95 Das Michelson-Interferometer wur-de mit den ver-f�g-ba-ren 
 op-ti-schen Kom-po-nen-ten (He^^UNe-
  []
 
-[6] [7]
+[7] [8]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-22.
+29.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [8]
-
-LaTeX Warning: Reference `fig:K' on page 9 undefined on input line 363.
-
-<Plots/Hol_log_K.pdf, id=263, 566.8161pt x 566.31422pt>
+) [9]
+<Plots/Hol_log_K.pdf, id=274, 566.8161pt x 566.31422pt>
 File: Plots/Hol_log_K.pdf Graphic file (type pdf)
 <use Plots/Hol_log_K.pdf>
-Package pdftex.def Info: Plots/Hol_log_K.pdf  used on input line 369.
+Package pdftex.def Info: Plots/Hol_log_K.pdf  used on input line 376.
 (pdftex.def)             Requested size: 384.1096pt x 383.76648pt.
-[9]
-<Holograms.png, id=278, 3259.17625pt x 1741.50626pt>
+ [10 <./Plots/Hol_log_K.pdf>]
+<Holograms.png, id=351, 3259.17625pt x 1741.50626pt>
 File: Holograms.png Graphic file (type png)
 <use Holograms.png>
-Package pdftex.def Info: Holograms.png  used on input line 408.
+Package pdftex.def Info: Holograms.png  used on input line 415.
 (pdftex.def)             Requested size: 341.43437pt x 182.4251pt.
- [10 <./Plots/Hol_log_K.pdf>]
-<Ghost.png, id=349, 1575.8875pt x 1687.30376pt>
+<Ghost.png, id=352, 1575.8875pt x 1687.30376pt>
 File: Ghost.png Graphic file (type png)
 <use Ghost.png>
-Package pdftex.def Info: Ghost.png  used on input line 415.
+Package pdftex.def Info: Ghost.png  used on input line 422.
 (pdftex.def)             Requested size: 213.39568pt x 228.47133pt.
- [11 <./Holograms.png> <./Ghost.png>]
-<Interference.png, id=363, 2216.28pt x 2133.9725pt>
+ [11 <./Holograms.png>] [12 <./Ghost.png>]
+<Interference.png, id=373, 2216.28pt x 2133.9725pt>
 File: Interference.png Graphic file (type png)
 <use Interference.png>
-Package pdftex.def Info: Interference.png  used on input line 446.
+Package pdftex.def Info: Interference.png  used on input line 453.
 (pdftex.def)             Requested size: 106.69783pt x 102.73233pt.
- [12 <./Interference.png>] [13] [14]
-<Plots/Hol_z_1_7cm.pdf, id=397, 566.63422pt x 566.31422pt>
+
+[13 <./Interference.png>] [14] [15]
+<Plots/Hol_z_1_7cm.pdf, id=408, 566.63422pt x 566.31422pt>
 File: Plots/Hol_z_1_7cm.pdf Graphic file (type pdf)
 <use Plots/Hol_z_1_7cm.pdf>
-Package pdftex.def Info: Plots/Hol_z_1_7cm.pdf  used on input line 487.
+Package pdftex.def Info: Plots/Hol_z_1_7cm.pdf  used on input line 495.
 (pdftex.def)             Requested size: 426.79135pt x 426.54929pt.
-<Plots/Hol_z_0_8cm.pdf, id=398, 566.63422pt x 566.31422pt>
+<Plots/Hol_z_0_8cm.pdf, id=409, 566.63422pt x 566.31422pt>
 File: Plots/Hol_z_0_8cm.pdf Graphic file (type pdf)
 <use Plots/Hol_z_0_8cm.pdf>
-Package pdftex.def Info: Plots/Hol_z_0_8cm.pdf  used on input line 494.
+Package pdftex.def Info: Plots/Hol_z_0_8cm.pdf  used on input line 502.
 (pdftex.def)             Requested size: 426.79135pt x 426.54929pt.
- [15 <./Plots/Hol_z_1_7cm.pdf>] [16 <./Plots/Hol_z_0_8cm.pdf>] (main.aux)
+ [16 <./Plots/Hol_z_1_7cm.pdf>] [17 <./Plots/Hol_z_0_8cm.pdf>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0150ECE00CAA14BD5FD27AFA7FE8A27F;3068.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -993,13 +989,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26440 strings out of 474485
- 513521 string characters out of 5743734
- 1948542 words of memory out of 5000000
- 48384 multiletter control sequences out of 15000+600000
+ 26443 strings out of 474485
+ 513553 string characters out of 5743734
+ 1947542 words of memory out of 5000000
+ 48386 multiletter control sequences out of 15000+600000
  573983 words of font info for 70 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 75i,11n,81p,1103b,2120s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,81p,1103b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\alexa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc
 1095.pk> <C:\Users\alexa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ectt1095.pk> <C:\Users\alexa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1024,9 +1020,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alexa/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexa/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ale
 xa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (17 pages, 7151479 bytes).
+Output written on main.pdf (18 pages, 7154037 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 1011 PDF objects out of 1200 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
