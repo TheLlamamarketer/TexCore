@@ -1,0 +1,450 @@
+\documentclass[11pt,a4paper]{article}
+
+% Layout
+\usepackage[top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Language & encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+% Math
+\usepackage{amsmath,amssymb}
+
+% Graphics
+\usepackage{graphicx}
+
+% Chemistry 
+\usepackage[version=4]{mhchem}
+\usepackage{electrons}
+
+% Units
+\usepackage{siunitx}
+
+% Links
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{csquotes}
+
+% Bibliography
+\usepackage[backend=biber,style=authoryear,citestyle=authoryear]{biblatex}
+\addbibresource{Source.bib}
+\usepackage{booktabs}
+
+\begin{document}
+
+
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+       {\huge\bfseries Versuchsprotokoll}
+
+       \vspace{1cm}
+
+{\LARGE Optische Messungen an einem Isolatorkristall}
+
+\vspace{0.5cm}
+
+{\Large OMI}
+
+\vspace{2cm}
+
+ {Versuchsprotokoll von}
+ \vspace{0.5cm}
+ 
+{\large Alexander Ilyin, Sophie Schmitz, Loïs Coquart}
+
+\vspace{0,5cm}
+
+{\small ilyia05@zedat.fu-berlin.de, loic04@zedat.fu-berlin.de, sophieales05@zedat.fu-berIin.de}
+
+\vspace{1cm}
+
+
+\vspace{2cm}
+
+{\small Tutor*in: Dr. Christian Teutloff}
+
+\vfill
+
+{\small Fortgeschrittenes Praktikum, WS 2025/26}
+
+ \vspace{0.5cm}
+ 
+ {\small Berlin, 25.11.2025}
+ 
+ \vspace{0.5cm}
+ 
+ {\small Freie Universität Berlin}
+ 
+ \vspace{0.5cm}
+ 
+ {\small Fachbereich Physik}
+ 
+ \vspace{0.5cm}
+
+
+\vspace{3cm}
+            
+   \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\section{Einführung}
+
+In diesem Versuch wird die Entstehung von Farben in Festkörpern mithilfe der Ligandenfeldtheorie  untersucht. Dazu wird als Kristallstruktur Rubin genommen, ein \ce{Al2O3}-Kristall mit einer oktaedrischen Struktur. Die charakteristische rote Farbe erhält der Rubin durch Verunreinigungen mit \ce{Cr^{3+}}-Ionen, die das Absorptionsspektrum des Rubins verändern. Um dies zu untersuchen, wird in diesem Versuch das Intensitätsspektrum eines Rubinkristalls mit einer Xe-Hochdrucklampe aufgenommen, woraus das Absorptionsspektrum und der Kristallfeldstärkeparameter $Dq$ bestimmt werden.
+
+\section{Physikalische Grundlagen}
+
+
+\subsection{Energieniveaus im Rubinkristall}
+
+Wir betrachten einen Rubinkristall aus Korund (\ce{Al2O3}), der mit \ce{Cr^{3+}}-Ionen verunreinigt wurde. Um eine solche Struktur zu beschreiben, benutzen wir die Ligandenfeldtheorie, die die Raumsymmetrien des Kristalls ausnutzt, um Aussagen über die d-Orbitale des \ce{Cr^{3+}}-Ions zu treffen. In einem oktaedrischen Kristall wird ein einzelner Elektronenzustand mit fünf Entartungen in zwei verschiedene Energiezustände aufgespalten. Da wir hier allerdings mehrere Elektronen betrachten und ein schwächeres Kristallfeld, wird in der schwachen-Feld-Näherung die Spin-Bahn-Kopplung der Elektronen in drei verschiedene Terme aufgespalten, $^4A_2$, $^4T_2$ und $^4T_1$ \parencite{Anleitung,Riedel}.
+
+\subsection{Optische Übergänge im Rubin}
+
+Das \ce{Cr^{3+}}-Ion hat eine \ce{[Ar] 3d^3}-Elektronenkonfiguration. Im oktaedrischen Kristallfeld von \ce{Al2O3} sind die \ce{Cr^{3+}}-Ionen von sechs \ce{O^{2-}}-Liganden umgeben. Die negativen Liganden erzeugen ein elektrostatisches Feld, das die Energieniveaus der d-Orbitale unterschiedlich stark anhebt, abhängig davon, wie stark die Orbitale auf die Liganden zeigen; dadurch hebt sich die Entartung der fünf Orbitale auf.
+
+Von den fünf d-Orbitalen liegen $d_{xy}$, $d_{xz}$ und $d_{yz}$ örtlich weiter von den Liganden entfernt und bilden dadurch die energetisch günstigere Gruppe $t_{2g}$. Die $d_{x^2-y^2}$ und $d_{z^2}$ zeigen stärker in Richtung der Liganden und bilden die energetisch höhere Gruppe $e_g$. Insgesamt verändert sich die Gesamtenergie nicht, aber die fünf d-Orbitale spalten sich in $3\times t_{2g}$ und $2\times e_g$ auf.
+
+Da \ce{Cr^{3+}} drei d-Elektronen besitzt, werden diese gemäß der Hundschen Regel zunächst die energetisch tiefer liegenden $t_{2g}$ besetzen:
+\[
+\subshell{4d:11100} \xrightarrow{} \subshell{$e_g$:00} \quad \subshell{$t_{2g}$:111}
+\]
+Dies ist der Grundzustand ($^4A_2$). Die angeregten Zustände entsprechen den $^4T_2$- und $^4T_1$-Termen und sind nicht entartet. Optische Übergänge zwischen diesen Termen liefern die charakteristischen U- und Y-Bänder.
+
+Die Energiedifferenz zwischen den Gruppen beträgt $\Delta=10\,Dq$. Die Größe $Dq$ ist durch die Stärke des Kristallfeldes bestimmt. In einem optischen Übergang kann ein Elektron aus $t_{2g}$ in $e_g$ angeregt werden, was die charakteristische Absorptionsfarbe des Rubins erklärt \parencite{Libre,Anleitung,Riedel}.
+
+\subsection{Tanabe-Sugano-Diagramme}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Tanabe_Sugano_Diagram_d3.pdf}
+    \caption{Tanabe-Sugano-Diagramm für $d^3$ nach \textcite{Tanabe}.}
+    \label{fig:TSD}
+\end{figure}
+
+Ein Tanabe–Sugano-Diagramm (Abb.~\ref{fig:TSD}) ist ein Termdiagramm, das die Energien der Multipletterme in Abhängigkeit der Kristallfeldstärke $\Delta$ bzw.\ $Dq$ darstellt. Üblich ist die Normierung mit dem Racah-Parameter $B$, der die Elektron–Elektron-Wechselwirkung beschreibt. Dadurch sind Tanabe–Sugano-Diagramme für eine gegebene Elektronenkonfiguration universell. Aus gemessenen Übergangsenergien kann man durch Abgleich der Verhältnisse $\Delta E$ die Größe $\Delta/B$ (und damit $Dq/B$) des betrachteten Kristalls bestimmen \parencite{Anleitung,Riedel,Orton}.
+
+\section{Versuchsaufbau}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Aufbau.pdf}
+    \caption{Versuchsaufbau (nach \textcite{Anleitung}) zur Messung eines Absorptionsspektrums mit Zweistrahl-Anordnung, Chopper und Lock-In.}
+    \label{fig:Aufbau}
+\end{figure}
+
+\newpage
+
+\section{Versuchsdurchführung} \label{chapter:Durchführung}
+
+Um das Experiment durchzuführen, verwenden wir ein Zweistrahl-Absorptionsspektrometer. Es ist wie folgt aufgebaut: Eine Xe-Hochdrucklampe strahlt einen Lichtstrahl durch eine Irisblende, die ihn mithilfe eines Strahlteilers in mehrere Strahlen aufteilt. Jeder Strahl durchläuft eine Linse, die ihn auf den Chopper lenkt. Der Chopper dreht ein Lochrad, durch welches der durchgelassene Strahl periodisch gewechselt wird. Wenn Strahl 1 (Probestrahl) durch ein Loch des Choppers hindurchgelassen wird, wird Strahl 2 (Referenzstrahl) blockiert, und umgekehrt. Hierbei ist Strahl 1 der Strahl, der von der Rubinprobe absorbiert wird, während Strahl 2 als Referenzstrahl nicht absorbiert wird. Die beiden Strahlen werden dann durch eine Irisblende und eine Linse geleitet, bevor sie durch einen neuen Strahlteiler laufen, der sie zum Monochromator leitet, der mit dem Photomultiplier verbunden ist. Der Monochromator mit Elektromotor ermöglicht es, den Wellenlängenwert des einfallenden Lichts im Laufe der Zeit zu variieren, bevor der Photomultiplier die empfangene Lichtintensität in ein elektrisches Signal umwandelt und dieses auf messbare Größen verstärkt. \\
+Auch wenn wir das Gerät nicht vollständig zusammenbauen müssen, müssen wir es einstellen und justieren, um möglichst genaue Ergebnisse zu erzielen. Zunächst versuchen wir, die beiden Strahlen auf den Spalt des Monochromators zu richten, indem wir die Ausrichtung der Spiegel, die Höhe der Linsen und die Öffnung der Irisblenden anpassen. Wenn beide Strahlen korrekt durch den Spalt des Monochromators fallen, sind auf dem Oszilloskop Peaks zu sehen. Diese Peaks zeigen uns, dass die beiden Strahlen nicht perfekt abwechselnd eintreffen, wie es der Chopper vorsieht, sondern dass sie sich für einen kurzen Moment überlagern. Die Zeit, in der sich die beiden Strahlen überlagern und gleichzeitig auf den Monochromator treffen, wird auf dem Oszilloskop durch die Breite der Spitzen dargestellt. Diese kurze Überlagerung der Strahlen kann darauf zurückgeführt werden, dass die beiden Strahlen nicht genau auf einer Höhe mit dem Mittelpunkt des Choppers sind und daher mit dem Chopper nicht genau um 180° zueinander versetzt waren. Wir versuchen nun, durch Verändern der Höhe der Linsen und der Lochblende zu erreichen, dass beide Strahlen auf gleicher Höhe sind und abwechselnd auf den Monochromator treffen.Sobald die Spitzen auf dem Oszilloskop sehr schmal geworden sind oder sogar ganz verschwunden sind, weiß man, dass sich die Strahlen nicht überlagern und abwechselnd eintreffen. Dieser Schritt war besonders wichtig, damit der Lock-in-Verstärker den Intensitätsunterschied zwischen den beiden Strahlen korrekt messen konnte.
+Nun können die Messungen durchgeführt werden. Insgesamt sind 6 Messungen durchzuführen.
+
+\subsection{“Basislinie” der Apparatur}
+
+Da die Montage bereits mit zwei Lochblenden auf den beiden Strahlengängen installiert war, beschlossen wir, diese Anordnung zu nutzen und diese Messung zuerst durchzuführen, bevor wir die Rubinprobe installierten. Wir stellten den Getriebefaktor des Monochromators auf 3,6 und die Empfindlichkeit des Lock-in-Verstärkers auf 20 mV ein und überprüften auch, dass der Monochromator in der Position „up” auf den Wert 350 nm eingestellt war, damit der betrachtete Wellenlängenwert beim Auslösen ansteigt. Man bereitet sich darauf vor, die Daten mit Hilfe des LabVIEW-Programms 'Absorptions Spektrometer' auf dem Computer aufzunehmen. Da das LabVIEW-Programm nur die Zeit seit dem Start der Messung aufnimmt, und nicht die tatsächliche Wellenlänge, muss sichergestellt werden dass die anfängliche Wellenlänge bekannt und möglichst akkurat ist. Dann lässt man die Daten aufzeichnen und achtet darauf, die Ergebnisse nicht zu verfälschen, indem man beispielsweise den Tisch bewegt. Wir warten, bis der Zähler des Monochromators 720 nm erreicht, und stimmen uns erneut ab, um die Aufzeichnung genau bei dem Wert von 720 nm zu beenden. Wir erhalten dann ein Diagramm der aufgezeichneten Daten, das wir speichern und später auswerten und analysieren können.
+
+\subsection{Differenzspektrum der beiden Strahlengänge}
+
+Bei der zweiten Messung wird der durch den Rubin hindurchtretende Strahl (Strahlengang 1) mit dem Referenzstrahl (Strahlengang 2) verglichen. Dazu wird die Lochblende auf Strahlengang 1 durch die Rubinprobe ersetzt. Da der Monochromator bei der ersten Messung von 350 nm bis 720 nm geregelt hat und wir unsere Messungen weiterhin in diesem Wellenlängenbereich durchführen müssen, beschließen wir diesmal, von 720 nm bis 350 nm zu messen, wobei der Knopf des Monochromators auf „down” steht. Das Ergebnis ist das gleiche, aber es muss notiert werden, damit es bei der Analyse des Spektrums nicht vergessen wird. Wir behalten jedoch den gleichen Getriebefaktor (3,6) und die gleiche Empfindlichkeit (20 mV) bei. Wir synchronisieren uns, um die Aufzeichnung genau bei 720 nm zu starten und bei 350 nm zu beenden.
+
+\subsection{Intensitätsspektrum der Xe-Hochdrucklampe}
+
+Die dritte Messung besteht darin, den durch den Rubin hindurchtretenden Strahl 1 abzudecken, um nur den Referenzstrahl zu messen. Dazu wird ein Blatt Papier vor die Irisblende des Strahlengangs 1 gelegt, um den Strahl zu blockieren. Es ist besser, das Licht mit einem äußeren Gegenstand wie Papier abzudecken, als die Irisblende zu schließen, da dies eine erneute Kalibrierung des Geräts erforderlich machen würde. Die Datenerfassung wird von 350 nm bis 720 nm mit dem Monochromator in der Position „up” gestartet. Der Getriebefaktor (3,6) und die Empfindlichkeit (20 mV) bleiben unverändert.
+
+\subsection{Intensitätsspektrum von Strahlengang 1 mit Rubin allein}
+
+Diese vierte Messung ist das Gegenteil der dritten. Diesmal wird der Referenzstrahl verdeckt, um nur den durch den Rubin hindurchtretenden Strahl zu messen. Dazu wird ein Blatt Papier vor die Irisblende des Strahlengangs 2 gehalten, um den Strahl zu blockieren. Die Datenerfassung wird von 720 nm bis 350 nm mit dem Monochromator in der Position „down” gestartet. Der Getriebefaktor (3,6) und die Empfindlichkeit (20 mV) bleiben unverändert.
+
+\subsection{Differenzspektrum (höhere Empfindlichkeit)}
+
+Für diese Messung wird die Durchführung der zweiten Messung (Differenzspektrum der beiden Strahlengänge) wiederholt, mit dem einzigen Unterschied, dass eine Empfindlichkeit von 2 mV, ein Getriebefaktor von 2,16 und ein Messbereich von 670 nm bis 720 nm gewählt werden. Dies wird getan, um 
+
+\subsection{Intensitätsspektrum Xe-Hochdrucklampe (höhere Empfindlichkeit)}
+
+Für diese Messung wird die dritte Messung (Intensitätsspektrum der Xe-Hochdrucklampe) wiederholt, mit dem einzigen Unterschied, dass eine Empfindlichkeit von 5 mV, ein Getriebefaktor von 2,16 und ein Messbereich von 670 nm bis 720 nm gewählt werden.
+
+\subsection{Intensitätsspektrum von Strahlengang 1 mit Rubin allein (höhere Empfindlichkeit)}
+
+Für diese siebte Messung wiederholt man die Einrichtung der vierten Messung (Intensitätsspektrum von Strahlengang 1 mit Rubin allein) mit dem einzigen Unterschied, dass man eine Empfindlichkeit von 5 mV, einen Getriebefaktor von 2,16 und einen Messbereich von 670 nm bis 720 nm wählt. Hier konnte die Empfindlichkeit von 2 mV nicht gewählt werden, da die gemessenen Werte zu groß für diesen Bereich wurden, also wurde der nächstgrößere Messbereich gewählt.
+
+\subsection{Differenzspektrum höhere Empfindlichkeit (Wiederholung)}
+
+Diese achte Messung war nicht erforderlich, sondern lediglich eine Vorsichtsmaßnahme, da wir bei der Datenerfassung der fünften Messung (Differenzspektrum mit höherer Empfindlichkeit) nicht genau bei 720 nm angehalten hatten. Wir beschlossen daher, diese Messung unter den selben Bedingungen zu wiederholen.
+
+\subsection{Hg Spektrum}
+
+Diese neunte Messung ist die letzte, die im Versuchsprotokoll vorgesehen ist. Sie besteht in der Messung des Spektrums einer Quecksilberlampe. Diese wird direkt vor den Spalt des Monochromators gestellt (wobei die Strahlengänge 1 und 2 abgedeckt werden, damit sie die Messung nicht beeinflussen). Die Messung wird ohne Chopper und ohne Lock-in-Verstärker durchgeführt. Die Datenerfassung wird von 350 nm bis 720 nm mit dem Monochromator in der Position „up” gestartet. Der Getriebefaktor wird auf 2,16 eingestellt und es wird kein Empfindlichkeitswert verwendet, da wir den Lock-in-Verstärker nicht einsetzen. Dies wird getan, um die LabVIEW-Daten genau kalibrieren zu können, da das Quecksilberspektrum sehr charakteristische Peaks hat und man somit die Wellenlängen zur Kalibrierung leicht bestimmen kann.
+
+\subsection{Differenzspektrum (Wiederholung)}
+
+Diese zehnte Messung (wie auch die achte) war nicht vorgesehen, aber wir haben festgestellt, dass wir bei der zweiten Messung bei 348 nm statt bei 350 nm angehalten hatten. Wir haben daher beschlossen, die Messung zu wiederholen und dabei genau auf den vom Monochromator beim Starten und Beenden der Aufzeichnung angezeigten Wert zu achten.
+
+
+%   --------------------------------------------------------------------------
+
+
+\section{Auswertung}
+Hier wurde das Absorptionsspektrum von Rubin untersucht um manche Eigenschaften deren Struktur zu bestimmen. Als wichtigsten Aspekt sollte hier $10$ Dq von Rubin bestimmt werden. Um die korrekte Wellenlängenwerte zu erhalten musste man als erstes die gegebenen Zeitwerte in Wellenlängen umwandeln, wobei man auch eine Kalibrierung benötigt. Als erstes wird die Kalibrierung besprochen.
+
+\subsection{Kalibrierung mithilfe einer Hg-Lampe}
+Alle Daten wurden mit einem Monochromator aufgenommen, welcher nicht direkt Wellenlängen notiert. Er hatte nur die Intensitäten und die Zeit aufgenommen, wobei die Zeit direkt zu Wellenlängen entsprechen. Alle Rechnungen benötigen die Werte in Wellenlängen, also muss man diese Umrechnen. 
+Als Groben Anfangswert wurde zu jeder Messung ein ungefährer Wellenlängenwert bei dem Start jeder Messung notiert. Die Zeiten wurden von der Geschwindigkeit des verwendeten Motors auch bestimmt, welcher im Verlauf des Versuchs mehrmals verstellt wurde. Die einzigen Geschwindigkeiten welche verwendet wurden waren die wo der Motor einen Übersetzungsverhältnis von 3.6:1 und 2.16:1 umgestellt wurde. Diese konnte man grob den Umrechnungen von $1nm/1s$ und $0.6nm/1s$ zuordnen. Hier war aber bekannt das diese Werte nicht exakt den gemessenen Werten entsprachen. Es musste auch verifiziert werden, ob eine Verschiebung von der original bestimmten Wellenlänge vorlag.
+
+Um all diese Verschiebungen zu bestimmen konnte man einfach Linien mit schon bekannten Linien vergleichen. Es wurde aus diesem Grund zusätzlich eine Quecksilber Lampe beobachtet, da diese sehr ausgeprägte und klar erkennbare Spitzen besaß. Es wurde für die Vergleichswerte die Daten aus dem NIST Katalog (\cite{Nist}) verwendet.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Hg_lines.pdf}
+    \caption{Darstellung Emmisionsspektrum von Quecksilber mit normierten Intensität. Auf der x Achse wird die Wellenlänge $\lambda_{nom}$ verwendet. Die behaupteten katalogisierte Werte werden auch mit vertikalen Linien dargestellt.}
+    \label{fig:hg_lines}
+\end{figure}
+
+Zur Bestimmung der Linien mussten diese erst mit den gemessenen Spitzen vergleichen. Dafür musste man als erstes die Spitzen identifizieren, wobei hier das SciPy-Paket \verb|find_peaks| verwendet wurde um alle prominenten Spitzen zu finden. Dieses Verfahren ist von der Auflösung der Daten begrenzt und damit wird nur der Wert am nächsten zum realen Wert angegeben. Es wurde somit als nächstes diese Punkte als Anfangswert für eine Gaußsche Anpassung verwendet um den genaueren Wert zu bestimmen, da die Spitzen durch eine Gaußfunktion auch angenähert werden können. Es wurden hier auch die Zeitwerte zu Wellenlängen umgerechnet mit $\lambda_{nom} = 350\;nm + t\cdot0.6 \; nm/s$.
+
+Die entstehende Kurve sieht man in Grafik \ref{fig:hg_lines}. Hier wurden die gefundenen Spitzen mit denen von dem Katalog verglichen und man erkennt, dass hier alle Linien klar von den errechneten sich unterscheiden. Manche Werte konnten aber nur der zweiten Ordnung mancher Wellenlängen zugeordnet werden, welche wahrscheinlich von dem verwendetem Gitter entstanden sind. Man erkennt eine klare Verschiebung, wobei auch leicht erkennbar wird, dass sich diese Verschiebung bei steigenden Wellenlängen etwas vergrößert. 
+
+Jetzt hatte man effektiv zwei Wellenlängenwerte für jeden Datenpunkt, also $\lambda_{nom}$ von der groben Umrechnung von der Zeit und die echten Wellenlängen $\lambda_{real}$ von dem Katalog. Um die gemessen Wellenlängen zu korrigieren konnte man diese beide gegeneinander auftragen, welche man in Grafik \ref{fig:hg_lines_fit} erkennen kann. Dort erkennt man die lineare Anpassung und das sich die Punkte von der Linie nicht abweichen. Es werden auch gleichzeitig die Residuen zu dieser Linie angezeigt um zu zeigen, dass die Abweichungen sehr klein sind. Um die Werte jetzt zu korrigieren kann man folgende Formel verwenden:
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Hg_line_fit.pdf}
+    \caption{Bestimmung der Umrechnungsparameter von den gemessenen Werten $\lambda_{nom}$ zu echten Wellenlängen $\lambda_{real}$ in blau. Es werden auch die Residuen zu der linearen Anpassung in orange auf der rechten Achse dargestellt.}
+    \label{fig:hg_lines_fit}
+\end{figure}
+
+\begin{equation} \label{eq:}
+    \lambda_{fit} = a + b\cdot\lambda_{nom} = a + b(a_0 + b_0\cdot t) = b\cdot b_0 t + a + b\cdot a_0
+\end{equation}
+
+Hier sind $a$ und $b$ die gefundenen Parameter von der linearen Anpassung, $b_0$ die vorher angenommene Umrechnung von Zeit zu Wellenlängen und $a_0$ der grobe Startwert der Messung. Es wurde hier $b_0=0.6 \;nm/s$ und $a_0=350\;nm$ verwendet. Hier wird aber erkennbar, dass diese Formel auch generell für andere Startwerte auch benutzt werden kann. Die resultierenden Parameter sind hier $a = -2.09 \pm 0.13 \; nm,$ und $ b = 0.99645 \pm 0.00024\; nm/nm$. Die "Root Mean Squared Deviation" (RMSD) von dem Fit war auch hier: $0.05995 nm$, was auch von einer kleinen Abweichungs spricht.
+
+\begin{table}[ht!] 
+    \centering
+    \caption{Literaturwerte $\lambda_{real}$ und gemessene Wellenlängen $\lambda_{nom}$ der Quecksilberlinien sowie deren kalibrierte Werte $\lambda_{fit}$ und Differenzen.}
+    \begin{tabular}{| c | c | c | c |}
+    \toprule
+    {$\lambda_{real}/nm$} & {$\lambda_{nom}/nm$} & {$\lambda_{fit}/nm$} & {$\lambda_{real} - \lambda_{fit} /nm$} \\
+    \midrule
+    {$365.02$} & {$368.512 \pm 0.006$} & {$365.117 \pm 0.045$} & {$-0.10$} \\
+    {$404.66$} & {$408.130 \pm 0.005$} & {$404.595 \pm 0.037$} & {$0.061$} \\
+    {$435.83$} & {$439.471 \pm 0.005$} & {$435.825 \pm 0.031$} & {$0.0082$} \\
+    {$507.30$} & {$511.097 \pm 0.004$} & {$507.196 \pm 0.022$} & {$0.11$} \\
+    {$546.07$} & {$550.057 \pm 0.003$} & {$546.018 \pm 0.022$} & {$0.056$} \\
+    {$576.96$} & {$581.18 \pm 0.02$} & {$577.030 \pm 0.029$} & {$-0.071$} \\
+    {$579.07$} & {$583.26 \pm 0.02$} & {$579.099 \pm 0.028$} & {$-0.032$} \\
+    {$593.46$} & {$597.69 \pm 0.05$} & {$593.478 \pm 0.054$} & {$-0.022$} \\
+    {$625.13$} & {$629.47 \pm 0.04$} & {$625.153 \pm 0.051$} & {$-0.019$} \\
+    {$626.34$} & {$630.65 \pm 0.01$} & {$626.325 \pm 0.034$} & {$0.014$} \\
+    \bottomrule
+    \end{tabular}
+    \label{tab:ruby_hg_lines}
+\end{table}
+
+Die Berechneten Werte mit den neu Umgerechneten Wellenlängen sind in Tabelle \ref{tab:ruby_hg_lines} dargestellt, wo die Residuen auch gezeigt werden. Dort wird schnell erkennbar wie klein die Abweichung der kalibrierten zu den katalogisierten Werten ist. Es wird auch erkennbar, dass die Abweichungen zu den angepassten Werten manchmal in dem Fehler lagen. Jetzt können die gespeicherten Zeitwerte bei den anderen Messungen zu den korrekten Wellenlängen angepasst werden.
+
+
+
+
+
+
+\subsection{Intensitätsspektren der Aufnahmen verarbeiten}
+
+Wie in der Durchführung \ref{chapter:Durchführung} beschrieben, wurde eine Vielzahl von Spektren aufgenommen. Hier wurden, wie aus dem Aufbau ersichtlich, die beiden Lichtstrahlen gleichzeitig aufgenommen. Mit dem Chopper wurden diese zu verschiedenen Zeitpunkten abgetastet und mit dem Lock-In-Verstärker verarbeitet. Die zwei Intensitäten $I_{Ruby}$ und $I_{Xe}$ wurden mit unterschiedlichen Vorzeichen aufgenommen. Im Verstärker wurden die zwei Intensitäten subtrahiert, also $I_{diff} = I_{Ruby}-I_{Xe} = I_{Obj}-I_{Ref}$. Das erklärt auch die verschiedenen Vorzeichen, da jeweils die Hintergrundbeleuchtung von den Intensitäten subtrahiert wurde. Es wurden beide Strahlen bei $\lambda\approx700$\,nm miteinander verglichen, damit $I_{diff}$ ungefähr 0 war. Wenn man die Intensitäten jetzt vergleichen will, muss man dieses negative Vorzeichen entfernen, da die Intensität von Licht nicht negativ sein kann. Die 0 in $I_{diff}$ bei $\approx700$\,nm kann man auch in Grafik \ref{fig:all} gut erkennen, wobei auch negative Werte aufgenommen wurden. Das deutet darauf hin, dass in dem umliegenden Bereich die Intensitäten ebenfalls betrachtet und die Blenden so angepasst werden sollten, dass $I_{Ruby}$ und $I_{Xe}$ hier ungefähr gleich blieben.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{All.pdf}
+    \caption{Darstellung von allen aufgenommenen Spektren. Hier wurden die Absorptions- und Emissionsspektren so miteinander multipliziert, um einen positiven Intensitätswert zu erzeugen, da Lichtintensität im engsten Sinne nicht negativ werden kann. Die Spektren wurden bereits verschoben.}
+    \label{fig:all}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.65\linewidth]{All_N.pdf}
+    \caption{Darstellung von allen aufgenommenen Spektren, aber nur im Bereich $>670$\,nm.}
+    \label{fig:all_N}
+\end{figure}
+
+Wenn man diese alle zusammen plottet, wie in Grafik \ref{fig:all}, erkennt man, wie sie sich unterscheiden. Zunächst erkennt man, dass in dem Bereich von etwa 450\,nm bis 500\,nm ein Bereich mit hoher „Turbulenz“ vorliegt, da dort viele Spitzen auftreten. Man kann somit auch sehr klar erkennen, dass alle Spektren mit einer Xe-Lampe als Hintergrundbelichtung aufgenommen wurden.
+
+Die verschiedenen Bereiche der Aufnahmen lassen sich auch an den Bezeichnungen ablesen, wobei hier das Suffix der Labels diese Bereiche beschreibt. So bedeutet bei $Xe_B$ das B „Breit“ und bezieht sich auf den breiteren Spektralbereich von etwa 350\,nm bis 720\,nm. Das Suffix $_N$ bezeichnet die Region um 670\,nm bis etwa 720\,nm. Die Spektren wurden mit einem Objekt- und einem Referenzstrahl aufgenommen. Bei $Xe_B$ wurde nur der Referenzstrahl aufgenommen und der Rubin blockiert, bei $Ruby_B$ war das umgekehrt. Beim Differenzspektrum $Diff_B$ wurden beide Strahlen aufgenommen und bei der Digitalisierung voneinander abgezogen. 
+
+Vielleicht ist es nicht sofort erkennbar, aber wenn man Abbildung \ref{fig:all_N} vergrößert, sieht man, dass alle Plots im Grunde genommen fast dieselben Endwerte in $\lambda$ besitzen, außer $Xe_B$. Das liegt daran, dass dieses Spektrum einen falschen Startwert besaß, da eine Abweichung von mehreren nm vorlag. Diese Verschiebung kam von einer zu frühen Datenaufnahme, und anstatt bei $720$\,nm zu beginnen, wurde bei ungefähr $722{,}3$\,nm gestartet. Damit widerspricht dies der in der Durchführung besprochenen Annahme, dass nicht das Differenzspektrum falsch aufgenommen wurde, sondern das Xe-Spektrum. Das hätte eine große Wirkung gehabt, wenn die Spektren nicht noch weiter angepasst worden wären.
+
+Um die Spektren sauber miteinander vergleichen zu können, mussten sie zunächst auf eine gemeinsame Wellenlängenskala gebracht werden. Da die Anfangswerte $a_0$ mit einem Fehler aufgenommen worden waren, war das Ziel, die Spektren nachträglich besser aneinander anzupassen. Die Quecksilberlampe hat einen Teil der Kalibrierung geliefert, als Nächstes mussten nur die Wellenlängen leicht verschoben werden. Wie bereits erwähnt, lag insbesondere bei $Xe_B$ eine Verschiebung der Wellenlängenachse von einigen \si{\nano\meter} vor. Anstatt diese Verschiebung nur grob abzuschätzen, wurde ein numerisches Verfahren gesucht, um die optimale Verschiebung systematisch zu bestimmen.
+
+Die Grundidee bestand darin, zwei Spektren in einem begrenzten Wellenlängenbereich so gegeneinander zu verschieben, dass ihre Intensitätsverläufe möglichst gut übereinstimmten. Dazu wurden beide Spektren nach der Wellenlänge sortiert, auf einen gemeinsamen Bereich eingeschränkt und die Intensitäten so normiert, dass der Median bei Null lag und die peak-to-peak-Amplitude Eins betrug. Anschließend wurde für viele kleine Wellenlängenverschiebungen $\Delta\lambda$ der mittlere quadratische Abstand zwischen den beiden Spektren berechnet. Diejenige Verschiebung $\Delta\lambda$, für die dieser Abstand minimal war, wurde als optimale Wellenlängenverschiebung interpretiert und auf das Spektrum angewendet. Um unphysikalisch große Korrekturen zu vermeiden, wurde die maximal erlaubte Verschiebung auf $1$–$2\,\si{\nano\meter}$ begrenzt.
+
+Dieses Vorgehen wurde in drei Schritten umgesetzt: Zunächst wurde das breitere Xenonspektrum $Xe_B$ im Bereich von etwa \SIrange{670}{715}{\nano\meter} an das schmalere Referenzspektrum $Xe_N$ angepasst, das als feste Referenz für die Wellenlängenskala diente. Es wurde somit angenommen, dass in diesen schmalen Bereichen, in denen eine langsamere Motorgeschwindigkeit vorlag, eine geringere Ungenauigkeit im Anfangswert auftrat. Im zweiten Schritt wurden alle übrigen „breiten“ Spektren an das so korrigierte $Xe_B$ angepasst, wobei der Bereich von \SIrange{450}{500}{\nano\meter} genutzt wurde, in dem die Xe-Lampe viele scharfe Linien aufwies. Im dritten Schritt wurden schließlich die schmalen Spektren, z.\,B. $Ruby_N$, an ihre jeweiligen breiten Partner (z.\,B. $Ruby_B$) im Bereich von \SIrange{670}{715}{\nano\meter} angepasst, während $Xe_N$ als absolute Referenz unverändert blieb.
+
+\begin{table}[ht!]
+    \centering
+    \caption{Wellenlängenverschiebungen der Spektren nach der Ausrichtung, basierend auf der Minimierung der mittleren quadratischen Abweichung. Vergleichsspektrum ist das $Xe_N$-Spektrum.}
+    \begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+    \toprule
+    { $ Ruby_{B} $} & { $ Ruby_{N} $} & { $ Xe_{B} $} & { $ Xe_{Basis} $} & { $ Xe_{N} $} & { $ diff_{B} $} & { $ diff_{B2} $} & { $ diff_{N} $} & { $ diff_{N2} $} \\
+    \midrule
+    {$0.21$} & {$0.87$} & {$-0.15$} & {$0.86$} & {$0$} & {$0.092$} & {$-0.39$} & {$-0.91$} & {$-0.94$} \\
+    \bottomrule
+    \end{tabular}
+    \label{tab:ruby_wavelength_shifts}
+\end{table}
+
+Damit lagen am Ende alle Spektren auf einer konsistenten, über $Xe_N$ verankerten Wellenlängenskala. Die zuvor vorhandenen Startverschiebungen von mehreren nm, insbesondere bei $Xe_B$, wurden korrigiert, ohne dass die Verschiebung nur „per Auge“ geschätzt werden musste. Diese Verschiebungen wurden in Tabelle \ref{tab:ruby_wavelength_shifts} aufgezeichnet. Bei manchen Spektren erkennt man eine höhere Verschiebung, da diese Methode ihre Schwächen hatte, wenn sich die Spektren stark unterschieden. Hier wird jedoch davon ausgegangen, dass diese Verschiebungen von der Reaktionszeit abhängen.
+
+\subsection{Absorptionsspektrum Rubin}
+
+Wie vorher erwähnt, wurde das Spektrum des Rubins immer mit der Hintergrundbeleuchtung der Xenonlampe aufgenommen. Aus diesen Daten sollte das eigentliche Absorptionsverhalten des Rubins extrahiert werden. Dazu wurden zunächst die Intensitätsspektren der Differenzmessung $I_{diff}$, des Referenzspektrums $I_{Xe}$ und des Rubinspektrums $I_{Ruby}$ auf eine gemeinsame Wellenlängenskala gebracht. In Abbildung~\ref{fig:ruby_raw_diff} sind diese drei Spektren dargestellt. Hier sind die Beziehungen zwischen den einzelnen Spektren erkennbar, wobei sofort $I_{diff} \approx |I_{Ruby} - I_{Xe}|$ auffällt.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Raw_Ruby_Diff.pdf}
+    \caption{Darstellung der Intensitäten der Xenonlampe, des durch den Rubin transmittierten Lichts und der Differenz zwischen den beiden Intensitäten.}
+    \label{fig:ruby_raw_diff}
+\end{figure}
+
+Es ist auch bekannt, dass $I_{Ruby}$ bereits Anteile der Xenonlampe enthält. Das erkennt man in der Grafik, aber auch physikalisch ist das logisch. Hier gilt
+\[
+I_{Ruby} = T_{Ruby} \cdot I_{Xe}.
+\]
+Um die Transmission des Rubins zu erhalten, muss diese Formel einfach umgestellt werden:
+\[
+T_{Ruby} = \frac{I_\mathrm{Ruby}}{I_\mathrm{Xe}}.
+\]
+Zusätzlich wurde aus der Differenzmessung $I_{diff}$ eine weitere Transmissionsgröße gebildet, um die Konsistenz der verschiedenen Messkanäle zu überprüfen. Diese wurde ähnlich bestimmt und ergibt im Groben
+\[
+T_{Ruby,\mathrm{diff}} \approx \frac{I_{Xe} - I_{diff}}{I_{Xe}} = 1 - \frac{I_{diff}}{I_{Xe}}.
+\]
+
+In Abbildung~\ref{fig:ruby_trans} sind die resultierenden Transmissionsspektren dargestellt. Man erkennt in beiden Spektren zwei deutliche, breite Absorptionsbanden, welche als starke Absenkungen der Transmittanz $T$ erscheinen: eine im violett-blauen Bereich bei etwa \SIrange{375}{420}{\nano\meter} und eine weitere im grün-gelben Bereich bei etwa \SIrange{525}{580}{\nano\meter}. Diese beiden Banden werden den Übergängen vom Grundzustand $^4A_2$ zu den angeregten Zuständen $^4T_1$ und $^4T_2$ des Cr$^{3+}$-Ions im Rubinkristall zugeordnet. Die feine Struktur der Xenonlampe ist sehr deutlich in der $T_{Ruby,diff}$-Kurve sichtbar, insbesondere im Vergleich zu $T_{Ruby}$. Aus diesem Grund wurde eine orangene Spline-Kurve verwendet, um den groben Verlauf der Daten zu zeigen. Aufgrund des hohen Rauschens können auch negative Werte auftreten, die etwas unphysikalisch sind, da dann scheinbar mehr Licht erzeugt würde, als eingestrahlt wurde (was einer Energieerhaltung widerspräche, sich hier aber durch das sehr starke Rauschen erklären lässt). 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Transmittance_Ruby_Diff.pdf}
+    \caption{Transmittanzspektren des Rubins relativ zur Xenonlampe. Dargestellt sind sowohl die Transmittanz aus der Differenzmessung $T_{Ruby,diff}$ als auch das Verhältnis $Ruby_B/Xe_B$, also $T_{Ruby}$.}
+    \label{fig:ruby_trans}
+\end{figure}
+
+Für die weitere Auswertung wurde $T_{Ruby}$ gewählt, da dieses Spektrum eine glatte Transmissionskurve mit gut definierten breiten Minima liefert. Um die Absorption im Sinne des Lambert-Beer’schen Gesetzes auszuwerten, wurde die Absorbanz über
+\[
+A(\lambda) = \log_{10}\left(\frac{1}{T(\lambda)}\right)
+\]
+definiert. Das resultierende Absorptionsspektrum ist in Abbildung~\ref{fig:ruby_abs} gezeigt. Hier treten die beiden Banden nun als gut ausgeprägte Maxima in der Absorbanz auf, was die Identifikation der Bandzentren erleichtert.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Abs_Ruby_Xe.pdf}
+    \caption{Absorbanz $A(\lambda) = \log_{10}(1/T)$ des Rubins, bestimmt aus der Transmittanz $T$. Zusätzlich ist die Gauß-Anpassung der beiden Hauptabsorptionsbanden dargestellt.}
+    \label{fig:ruby_abs}
+\end{figure}
+
+\subsection{Tanabe-Sugano-Diagramm und 1Dq-Bestimmung}
+
+Aus dem Absorptionsspektrum in Abbildung~\ref{fig:ruby_abs} lassen sich die Energien der beiden dominanten Übergänge im Rubinkristall bestimmen. Dazu wurden die beiden breiten Banden um die initialen Schätzwerte $\lambda \approx \SI{408}{\nano\meter}$ und $\lambda \approx \SI{558}{\nano\meter}$ ausgewählt. In diesen Bereichen wurde die Absorbanz jeweils mit einer Gaußfunktion angenähert. Die zuvor bestimmten Maxima der Banden dienten als Startwerte für die Fit-Parameter, insbesondere für die Bandzentren. Aus den Fitparametern der beiden Fits ergaben sich die zentralen Wellenlängen
+\[
+\lambda_{^4 T_1} = (409.42 \pm 0.09)\,\text{nm}, \qquad
+\lambda_{^4 T_2} = (559.20 \pm 0.06)\,\text{nm}.
+\]
+
+Um diese Wellenlängen mit dem Tanabe-Sugano-Diagramm vergleichen zu können, mussten sie in Energien umgerechnet werden. Dazu wurde die Übergangsenergie in Wellenzahlen durch
+\[
+E = \frac{10^7}{\lambda} \quad \text{in } \mathrm{cm}^{-1}
+\]
+bestimmt und anschließend mit dem Racah-Parameter $B = 765\,\mathrm{cm}^{-1}$ normiert, sodass sich dimensionslose Energien $E/B$ ergaben. Auf diese Weise erhielt man für beide Übergänge jeweils einen Punkt im Diagramm der Form $E/B$. Diese waren hier
+\[
+E_{^4 T_1} = (31.928 \pm 0.007), \qquad
+E_{^4 T_2} = (23.376  \pm 0.002)
+\]
+mit dem Verhältnis $1.3658$ zueinander.
+
+Das Tanabe-Sugano-Diagramm für ein d$^3$-System im oktaedrischen Feld (wie Cr$^{3+}$ in Rubin) wurde nicht analytisch berechnet. Stattdessen wurde das Bild \ref{fig:TSD} untersucht, und da es im SVG-Format (Scalable Vector Graphics) vorlag, konnten die einzelnen Elemente analysiert werden. Hieraus wurden die zugrunde liegenden Formeln extrahiert, die für die Darstellung verwendet wurden. Diese wurden am Ende mit Splines interpoliert, wodurch die exakten Plots aus dem Bild rekonstruiert wurden. Damit konnten die Zustände $^4T_1$ und $^4T_2$ als Funktionen von $Dq/B$ dargestellt werden. Für jede der experimentell bestimmten Energien wurde dann diejenige Gitterfeldstärke $Dq/B$ gesucht, für die die entsprechende Kurve des Tanabe-Sugano-Diagramms denselben Energiewert annimmt. Dies wurde durch eine numerische Nullstellensuche umgesetzt, indem die Differenz zwischen berechneten Kurvenenergien und gemessenen Energien minimiert wurde. 
+
+In Abbildung~\ref{fig:tanabe_sugano} ist das verwendete Tanabe-Sugano-Diagramm mit nur den beiden relevanten Kurven $^4T_1$ und $^4T_2$ dargestellt. Die horizontalen Linien markieren die aus dem Experiment bestimmten Energien $E_{^4T_1}/B$ und $E_{^4T_2}/B$, während die vertikale Linie den zugehörigen Wert von $Dq/B$ kennzeichnet, bei dem beide Energien zugleich gut reproduziert werden. Die bestimmten Werte waren
+\[
+(^4T_1):\; \frac{Dq}{B} = 2.22418 \pm 0.00061, \qquad
+(^4T_2):\; \frac{Dq}{B} = 2.338 \pm 0.00024.
+\]
+Hier erkennt man, dass die Fehler zu klein sind, da die Abweichung zwischen den Werten bereits etwas größer ist, als es die Fehlerbalken suggerieren.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.65\linewidth]{Tanabe_Sugano_4T.pdf}
+    \caption{Tanabe-Sugano-Diagramm für die Zustände $^4T_1$ und $^4T_2$ eines d$^3$-Ions im oktaedrischen Feld. Die aus den Fits gewonnenen Energien sind als horizontale Linien eingezeichnet, der entsprechende Wert von $Dq/B$ wird durch die vertikale Linie markiert.}
+    \label{fig:tanabe_sugano}
+\end{figure}
+
+Aus dem so bestimmten Wert von $Dq/B$ und $B$ konnte schließlich die Größe $10Dq$ berechnet werden. Dabei ergibt sich $10Dq$ zunächst in \si{\per\centi\meter} und kann über den Faktor $1\,\mathrm{eV} \approx 8065.54\,\mathrm{cm}^{-1}$ in Elektronenvolt umgerechnet werden.
+Somit kommt man zu den Werten
+\[
+10Dq = (17450 \pm 440)\,\mathrm{cm}^{-1} \quad \text{oder} \quad (2.163 \pm 0.054)\,\mathrm{eV}.
+\]
+Hier wird nur ein Wert angegeben, da der Mittelwert der beiden Ergebnisse verwendet und die Unsicherheit als halbes Intervall zwischen den beiden $Dq/B$-Werten gewählt wurde.
+
+
+
+
+\section{Diskussion}
+
+In diesem Versuch sollte aus dem Absorptionsspektrum eines Rubinkristalls die Kristallfeldaufspaltung $10Dq$ bestimmt werden. Dazu mussten die beiden dominanten d–d-Übergänge des \ce{Cr^{3+}}-Ions ausgewertet werden. Im Folgenden werden die Qualität der Kalibrierung, die Bestimmung der Übergangsenergien und die daraus abgeleitete Kristallfeldstärke kurz diskutiert.
+
+\subsection{Kalibrierung und Konsistenz der Spektren}
+
+Die Kalibrierung des Monochromators mithilfe der Hg-Lampe lieferte eine nahezu lineare Beziehung zwischen den nominellen Wellenlängen $\lambda_\mathrm{nom}$ und den Literaturwerten $\lambda_\mathrm{real}$. Die lineare Anpassung ergab die Parameter
+\[
+a = (-2.09 \pm 0.13)\,\text{nm}, \qquad b = 0.99645 \pm 0.00024,
+\]
+mit einer RMSD von nur $\approx 0.06\,\text{nm}$. Damit liegen die Residuen deutlich unterhalb der typischen Linienbreiten im Rubinspektrum, sodass die reine Hg-Kalibrierung als erfolgreich angenommen werden kann.
+
+Deutlich problematischer waren systematische Verschiebungen der Startwerte einzelner Messreihen, insbesondere bei $Xe_B$, wo sich ein anfänglicher Fehler von mehreren \si{\nano\meter} bei dem Startwert zeigte. Die nachträgliche Ausrichtung aller Spektren auf das Referenzspektrum $Xe_N$ über die Minimierung der mittleren quadratischen Abweichung reduzierte diese Startfehler effektiv und brachte alle Spektren auf eine gemeinsame Skala. Die Methode die Verwendet wurde war Mathematisch etwas unrein, da wie man in den Abbildungen gesehen hatte, Rubin eine andere Form von dem Emissionsspektrum der Xe Lampe hatte. Die in Tabelle~\ref{tab:ruby_wavelength_shifts} aufgeführten Korrekturen zeigen jedoch, dass insbesondere für einige Differenzspektren Verschiebungen von fast $1\,\text{nm}$ notwendig waren. Das zeigt, dass diese Abweichungen nicht mit großes Vertrauen von der Reaktionszeit kommen, die bei $\approx0.2\,nm$ abgeschätzt waren (Da wir 1nm/1s oder 0.6nm/1s hatten). Für andere Spektren fiel die Korrektur mit $0.21\,\text{nm}$ moderat aus, was aber für die Bestimmung der Bandzentren wichtig war. Die formalen Fehler der Kalibriergerade bleiben damit zwar klein, die Gesamtunsicherheit der Wellenlängenskala wird aber durch diese zusätzlichen Verschiebungen deutlich dominiert. Visuell konnte man einen Unterschied erkennen, wobei die Graphen in Abb. \ref{fig:all} sehr gut miteinander übereinstimmen, konnte schwer gesagt werden, ob die generelle Wellenlängenverschiebung korrekt ist. Dafür müsste man eine ähnlich zu der Quecksilber Kalibrierung mithilfe von bekannten Linien im Xe Spektrum mindestens eine markante Linie heraussuchen und diese als Stützstelle mit bekannter Wellenlänge verwenden.
+
+\subsection{Absorptionsbänder und Bestimmung von 10Dq}
+
+Die Transmittanz des Rubins wurde aus dem Verhältnis $T_\mathrm{Ruby} = I_\mathrm{Ruby}/I_\mathrm{Xe}$ bestimmt. Damit wird das spektral stark strukturierte Emissionsprofil der Xe-Lampe etwas herausdividiert, auch wenn in der Transmittanzkurve insbesondere im blauen Bereich noch Reste der Lampenlinien sichtbar bleiben. Die $I_\mathrm{Ruby}$ hatte sehr saubere Kurven bei den niedriegen Intensitäten, wodurch die relevanten Absorbtionsbereiche auch recht Rauschfrei wurden. Bei dem Differenzspektrum wurde das Rauschen bei höherer Lichtintensität noch hineinbezogen, wodurch das $T_\mathrm{Ruby,diff}$ mit höherem Rauschen geplottet. Die Umrechnung in die Absorbanz
+\[
+A(\lambda) = \log_{10}\!\left(\frac{1}{T(\lambda)}\right)
+\]
+führte zu einem glatten Absorptionsspektrum mit zwei sehr deutlich ausgeprägten Banden.  
+
+Die beiden Banden wurden in einem begrenzten Wellenlängenintervall jeweils mit einer Gaußfunktion gefittet, wobei der Fehler dieser sehr klein war, da diese Banden sehr Gauß-geformt sind. Aus den Fits ergaben sich die Bandzentren
+\[
+\lambda_{^4T_1} = (409.42 \pm 0.09)\,\text{nm}, \qquad
+\lambda_{^4T_2} = (559.20 \pm 0.06)\,\text{nm}.
+\]
+Über $E = 10^7/\lambda$ (in \si{\per\centi\meter}) und mit dem angegebenen Racah-Parameter $B = 765\,\text{cm}^{-1}$ ergeben sich daraus die dimensionslosen Energien
+\[
+E_{^4T_1}/B = 31.928 \pm 0.007, \qquad
+E_{^4T_2}/B = 23.376 \pm 0.002,
+\]
+mit einem Verhältnis $E_{^4T_1}/E_{^4T_2} \approx 1.37$. Hier wurden systematische Beiträge wie Restfehler in der Wellenlängenkalibrierung nicht hineingezogen, weshalb dieser Fehler auch so klein wurde. Wenn eine Wellenlängenkalibirierungsfehler angenommen wird, dann müsste dieser im Bereich von $\approx\pm1\,nm$ gewählt werden.
+
+Für die Bestimmung von $Dq/B$ wurde kein analytisches Tanabe-Sugano-Diagramm verwendet, sondern das Diagramm aus Abb.~\ref{fig:TSD} im SVG-Format ausgewertet. Aus dieser Datei wurden die zugrundeliegenden Energiekurven der Zustände $^4T_1$ und $^4T_2$ rekonstruiert. Für jede der experimentell bestimmten Energien wurde anschließend derjenige Wert von $Dq/B$ gesucht, bei dem die jeweilige Kurve dieselbe Energie annimmt. Daraus ergaben sich:
+\[
+\left(\frac{Dq}{B}\right)_{^4T_1} = 2.22418 \pm 0.0006, \qquad
+\left(\frac{Dq}{B}\right)_{^4T_2} = 2.338 \pm 0.0003.
+\]
+Schon der Unterschied der beiden Werte von etwa $0.11$ zeigt, dass die formalen Fehler von der Fehlerfortpflanzung deutlich zu optimistisch gewählt wurde. Würden alle Annahmen perfekt stimmen, müssten beide Übergänge denselben Wert von $Dq/B$ liefern. In der Praxis führen jedoch die vereinfachte Modellierung und die erwähnten systematischen Fehler der Spektren zu einer realistischeren Unsicherheit im Bereich einiger Prozent.  
+
+Als pragmatische Größe wurde daher ein Mittelwert aus beiden Bestimmungen verwendet und die Unsicherheit als halbes Intervall zwischen den beiden $Dq/B$-Werten abgeschätzt. Daraus folgt
+\[
+\frac{Dq}{B} \approx 2.28 \pm 0.06
+\]
+und damit
+\[
+10Dq = 10 \cdot \frac{Dq}{B} \cdot B 
+      \approx (1.7450 \pm 0.044)\times 10^4\,\text{cm}^{-1}
+      \approx (2.16 \pm 0.05)\,\text{eV}.
+\]
+Dieser Wert liegt in der erwarteten Größenordnung für die Kristallfeldaufspaltung von Rubin \ce{Al2O3}:\ce{Cr^3+} und ist mit typischen Literaturangaben für Rubin vergleichbar, wobei zum Vergleich in der Literatur für Rubin etwa $10Dq = 2.2\,eV$ ist, wobei beispielsweise einen Wert $10Dq = 2.24eV$ bei (\cite{Hunault2018RubyCr3d}) gefunden wurde. Angesichts der vereinfachten Datenauswertung ist diese Abweichung plausibel und deutet vor allem auf verbleibende systematische Unsicherheiten in der spektralen Analyse hin.
+
+Als größte Kritikpunkte bei diesem Protokoll könnte eingeschätzt werden, dass es die letztliche Überlagerung der Kurven ist. Mit diesem Punkt kommt eine unbekannte Abweichung ins spiel, welche durch weitere Kalibrierung aufgehoben werden konnte. Die Wahl von $Xe_N$ als absolut korrekten Stützpunkt hat auch seine Probleme, da es unbekannt war wie genau der Startwert bestimmt wurde. Die resultierenden Werte sind sehr nah an bekannten Literaturwerten, aber die Fehlerbestimmung zum Ende brauchte noch Verbesserungspotential, indem alle Fehlerquellen in der Datenverarbeitung berücksichtigt werden sollten.
+
+
+\printbibliography
+\end{document}

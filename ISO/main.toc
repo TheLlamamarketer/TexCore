@@ -1,0 +1,26 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Einführung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Physikalische Grundlagen}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Energieniveaus im Rubinkristall}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Optische Übergänge im Rubin}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Tanabe-Sugano-Diagramme}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Versuchsaufbau}{3}{section.3}%
+\contentsline {section}{\numberline {4}Versuchsdurchführung}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}“Basislinie” der Apparatur}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Differenzspektrum der beiden Strahlengänge}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Intensitätsspektrum der Xe-Hochdrucklampe}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Intensitätsspektrum von Strahlengang 1 mit Rubin allein}{5}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Differenzspektrum (höhere Empfindlichkeit)}{5}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Intensitätsspektrum Xe-Hochdrucklampe (höhere Empfindlichkeit)}{5}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Intensitätsspektrum von Strahlengang 1 mit Rubin allein (höhere Empfindlichkeit)}{6}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Differenzspektrum höhere Empfindlichkeit (Wiederholung)}{6}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Hg Spektrum}{6}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Differenzspektrum (Wiederholung)}{6}{subsection.4.10}%
+\contentsline {section}{\numberline {5}Auswertung}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Kalibrierung mithilfe einer Hg-Lampe}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Intensitätsspektren der Aufnahmen verarbeiten}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Absorptionsspektrum Rubin}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Tanabe-Sugano-Diagramm und 1Dq-Bestimmung}{13}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Diskussion}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Kalibrierung und Konsistenz der Spektren}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Absorptionsbänder und Bestimmung von 10Dq}{16}{subsection.6.2}%
