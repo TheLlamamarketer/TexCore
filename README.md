@@ -93,29 +93,6 @@ cd Test1
 pdflatex test.tex
 pdflatex test.tex
 ```
-
-## Project Structure
-
-```
-TexCore/
-├── HOL/
-│   ├── main.tex          # Main LaTeX file
-│   ├── Source.bib        # Bibliography
-│   ├── Plots/            # Generated plots
-│   └── *.pdf, *.png      # Images and figures
-├── FHZ/
-│   ├── main.tex
-│   └── Quellen.bib
-├── MST/
-│   └── mass.tex
-├── Test1/
-│   └── test.tex
-├── build.ps1             # Build script
-├── .latexmkrc            # latexmk configuration
-├── .gitignore            # Git ignore rules
-└── README.md             # This file
-```
-
 ## Tips
 
 ### Faster Builds
@@ -143,16 +120,11 @@ TexCore/
 ## Git Workflow
 
 The repository uses `.gitignore` to exclude build artifacts but **keeps PDF files** versioned.
-
 Ignored files include:
 - `*.aux`, `*.log`, `*.out`, `*.toc`
 - `*.bbl`, `*.blg`, `*.bcf`, `*.run.xml`
 - `*.synctex.gz`, `*.fls`, `*.fdb_latexmk`
 
-To see which files are ignored:
-```powershell
-git status --ignored
-```
 
 ## VS Code Integration
 
@@ -160,6 +132,5 @@ If using LaTeX Workshop extension, it will automatically:
 - Build on save
 - Show PDF preview
 - Provide IntelliSense for LaTeX commands
-- Run biber when needed (if configured)
 
 The `.latexmkrc` file configures build behavior for both command-line and VS Code usage.
